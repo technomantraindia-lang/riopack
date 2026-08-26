@@ -1582,84 +1582,60 @@ h1, h2, h3 {
   max-width: 1000px;
 }
 
-/* ---------- Section 11 — Testimonial / Customer Experience ---------- */
+/* ---------- Section 11 — Customer Experience & Trust ---------- */
 .testimonial-section {
   background: #F7F1EA;
-  padding: clamp(80px, 9vw, 140px) 0;
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
+  padding: clamp(90px, 10vw, 150px) 0;
+  position: relative;
 }
 .testimonial-container {
   width: min(92vw, 1400px);
   margin: 0 auto;
 }
-.testimonial-head-row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: clamp(30px, 4vw, 60px);
-}
-.testimonial-head-left {
-  flex: 0 0 58%;
-  max-width: 58%;
+
+/* Part 1: Customer Experience Statement */
+.exp-statement-wrap {
+  max-width: 1150px;
 }
 .testimonial-tagline {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #E8400A;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: block;
 }
 .testimonial-heading {
   font-family: 'Oswald', sans-serif;
-  font-size: clamp(2.8rem, 4.5vw, 5.2rem);
+  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.04em;
-  line-height: 0.92;
+  line-height: 0.9;
   color: #111111;
-  margin: 0;
+  margin: 0 0 clamp(24px, 3vw, 40px) 0;
 }
-.testimonial-head-right {
-  flex: 0 0 38%;
-  max-width: 38%;
-}
-.quote-card-fab {
-  position: relative;
-  padding-top: 10px;
-}
-.quote-mark {
-  font-family: 'Oswald', sans-serif;
-  font-size: 4.5rem;
-  line-height: 0.7;
-  color: #E8400A;
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 800;
-}
-.quote-text {
+.exp-philosophy-text {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(1.05rem, 1.3vw, 1.35rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
   line-height: 1.55;
-  font-weight: 400;
   color: #222222;
-  margin-bottom: 24px;
+  font-weight: 500;
+  max-width: 900px;
+  margin-bottom: 30px;
+  border-left: 3px solid #E8400A;
+  padding-left: 22px;
 }
-.quote-author {
+.exp-commitment-badge {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  padding-top: 16px;
+  gap: 3px;
+  padding-left: 25px;
 }
 .author-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;

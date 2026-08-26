@@ -262,7 +262,10 @@
     font-size: clamp(2.8rem, 10vw, 5rem);
   }
 
-  /* Testimonial mobile rules: keep side-by-side layout above 640px */
+  /* Customer Experience & Trust mobile rules */
+  .exp-logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   /* Final CTA mobile rules */
   .cta-banner {
@@ -340,17 +343,8 @@
 
   .btn { padding: 14px 28px; }
 
-  .footer-top-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .testimonial-head-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-  }
-  .testimonial-head-left, .testimonial-head-right {
-    flex: 1;
-    max-width: 100%;
+  .exp-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
