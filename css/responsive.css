@@ -263,8 +263,15 @@
   }
 
   /* Customer Experience & Trust mobile rules */
-  .exp-logos-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .exp-compact-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .exp-statement-col, .exp-trust-col {
+    flex: 1;
+    max-width: 100%;
+    border-left: none;
+    padding-left: 0;
   }
 
   /* Final CTA mobile rules */

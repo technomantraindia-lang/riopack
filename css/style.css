@@ -1585,7 +1585,7 @@ h1, h2, h3 {
 /* ---------- Section 11 — Customer Experience & Trust ---------- */
 .testimonial-section {
   background: #F7F1EA;
-  padding: clamp(90px, 10vw, 150px) 0;
+  padding: clamp(60px, 6vw, 95px) 0;
   position: relative;
 }
 .testimonial-container {
@@ -1593,61 +1593,118 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-/* Part 1: Customer Experience Statement */
-.exp-statement-wrap {
-  max-width: 1150px;
+.exp-compact-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(30px, 4vw, 70px);
+}
+
+/* Left Column: Statement */
+.exp-statement-col {
+  flex: 0 0 54%;
+  max-width: 54%;
 }
 .testimonial-tagline {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #E8400A;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   display: block;
 }
 .testimonial-heading {
   font-family: 'Oswald', sans-serif;
-  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
+  font-size: clamp(2.6rem, 4.5vw, 5.2rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.04em;
-  line-height: 0.9;
+  line-height: 0.92;
   color: #111111;
-  margin: 0 0 clamp(24px, 3vw, 40px) 0;
+  margin: 0 0 20px 0;
 }
 .exp-philosophy-text {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  font-size: clamp(0.98rem, 1.3vw, 1.15rem);
   line-height: 1.55;
   color: #222222;
   font-weight: 500;
-  max-width: 900px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   border-left: 3px solid #E8400A;
-  padding-left: 22px;
+  padding-left: 16px;
 }
 .exp-commitment-badge {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding-left: 25px;
+  gap: 2px;
+  padding-left: 19px;
 }
 .author-title {
   font-family: 'Oswald', sans-serif;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #111;
 }
 .author-sub {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #777;
+}
+
+/* Right Column: Trust & Logos */
+.exp-trust-col {
+  flex: 0 0 42%;
+  max-width: 42%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: clamp(24px, 3.5vw, 50px);
+}
+.exp-trust-head {
+  margin-bottom: 24px;
+}
+.exp-trust-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.6rem, 2.5vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  color: #111111;
+  margin: 6px 0 0 0;
+}
+
+/* Client Logo Grid */
+.exp-logos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+}
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  filter: grayscale(1) opacity(0.65);
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+.logo-item img {
+  max-width: 140px;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.logo-item:hover {
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.05);
 }
 
 /* ---------- Section 12 — Final CTA ---------- */
