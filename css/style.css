@@ -252,29 +252,32 @@ h1, h2, h3 {
 /* Hero small label */
 .hero-label {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 500;
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 20px;
-  display: block;
+  margin-bottom: 18px;
+  display: inline-block;
 }
 
 /* Giant heading */
 .hero-giant {
   font-family: 'Oswald', sans-serif;
-  font-size: clamp(4.5rem, 14vw, 16rem);
+  font-size: clamp(4.2rem, 12.2vw, 14.2rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.03em;
-  line-height: 0.88;
+  line-height: 0.89;
   color: #E8DCD5;
   margin: 0;
   padding: 0;
 }
 .hero-giant-line {
   display: block;
+}
+.hero-giant-line.text-accent {
+  color: #E8400A;
 }
 
 /* Right-side secondary content */
