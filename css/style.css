@@ -1853,3 +1853,15 @@ h1, h2, h3 {
 .copyright-text, .footer-credit {
   margin: 0;
 }
+.technomantra-link {
+  color: #E8400A;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232, 64, 10, 0.4);
+  padding-bottom: 1px;
+  transition: all 0.3s ease;
+}
+.technomantra-link:hover {
+  color: #ff551f;
+  border-bottom-color: #ff551f;
+}
