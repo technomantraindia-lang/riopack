@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181a1f"/>
+      <stop offset="50%" stop-color="#0c0d10"/>
+      <stop offset="100%" stop-color="#040506"/>
+    </linearGradient>
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d0d7de"/>
+      <stop offset="50%" stop-color="#57606a"/>
+      <stop offset="100%" stop-color="#21262d"/>
+    </linearGradient>
+    <radialGradient id="orangeGlow2" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#E8400A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E8400A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGrad2)"/>
+  
+  <!-- Subtle Industrial Grid -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="400" x2="600" y2="400"/>
+    <line x1="0" y1="600" x2="600" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+  </g>
+
+  <!-- Orange Glow -->
+  <circle cx="300" cy="380" r="290" fill="url(#orangeGlow2)"/>
+
+  <!-- Precision Wrench & Spares Artwork -->
+  <g transform="translate(300, 380)">
+    <!-- Interlocking Gears -->
+    <circle cx="-60" cy="-40" r="85" fill="none" stroke="url(#chromeGrad)" stroke-width="12" opacity="0.7"/>
+    <circle cx="-60" cy="-40" r="40" fill="#111317" stroke="#E8400A" stroke-width="4"/>
+    
+    <circle cx="80" cy="60" r="110" fill="none" stroke="url(#chromeGrad)" stroke-width="16" opacity="0.85"/>
+    <circle cx="80" cy="60" r="70" fill="none" stroke="#E8400A" stroke-width="2" stroke-dasharray="10 6"/>
+    <circle cx="80" cy="60" r="30" fill="#E8400A"/>
+
+    <!-- Wrench Tool Graphic -->
+    <path d="M-140,140 L40,-40 C55,-55 80,-55 95,-40 L115,-20 C130,-5 130,20 115,35 L-65,215 Z" fill="url(#chromeGrad)" opacity="0.9"/>
+    <circle cx="75" cy="-10" r="22" fill="#0c0d10" stroke="#E8400A" stroke-width="3"/>
+
+    <!-- Tech Circles -->
+    <circle cx="0" cy="0" r="230" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <line x1="-250" y1="0" x2="250" y2="0" stroke="rgba(232,64,10,0.25)" stroke-dasharray="6 4"/>
+    <line x1="0" y1="-250" x2="0" y2="250" stroke="rgba(232,64,10,0.25)" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Technical Overlay Label -->
+  <text x="50" y="70" font-family="'Oswald', sans-serif" font-size="20" font-weight="700" fill="#E8400A" letter-spacing="4">SERVICE &amp; SPARES</text>
+  <text x="50" y="95" font-family="'Inter', sans-serif" font-size="12" fill="rgba(255,255,255,0.4)" letter-spacing="2">MAINTENANCE • PARTS • SUPPORT</text>
+</svg>
