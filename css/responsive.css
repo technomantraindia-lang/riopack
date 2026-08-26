@@ -218,9 +218,12 @@
     flex: 1;
     max-width: 100%;
   }
-  .projects-grid-fab {
+  .projects-grid-editorial {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 48px;
+  }
+  .project-col-7, .project-col-5 {
+    grid-column: span 1;
   }
 }
 
