@@ -1,0 +1,1855 @@
+/* ============ RIOPAK ENGINEERS – Main Styles (Fabrecor-inspired visual language) ============ */
+
+:root {
+  --primary: #0d3b66;
+  --primary-dark: #082744;
+  --accent: #f4a300;
+  --accent-light: #ffb833;
+  --dark: #0c1116;
+  --text: #333;
+  --muted: #6b7280;
+  --light: #f5f5f3;
+  --white: #ffffff;
+  --radius: 4px;
+  --shadow: 0 20px 50px rgba(8, 39, 68, 0.12);
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: min(1280px, 92%);
+  margin-inline: auto;
+}
+
+.section { padding: 120px 0; }
+.section-alt { background: var(--light); }
+.center { text-align: center; margin-top: 56px; }
+
+/* ---------- Typography scale ---------- */
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--dark);
+}
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(244, 163, 0, 0.35); }
+.btn-outline {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--white);
+}
+.btn-outline:hover { background: var(--white); color: var(--primary); border-color: var(--white); }
+.btn-light {
+  background: var(--white);
+  color: var(--primary);
+}
+.btn-light:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.btn-lg { padding: 18px 44px; font-size: 0.9rem; }
+
+.link-arrow {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.link-arrow:hover { color: var(--accent); letter-spacing: 2.5px; }
+
+/* ---------- Header (Fabrecor Style) ---------- */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.site-header.scrolled {
+  position: fixed;
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+.header-container-fab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 22px clamp(24px, 3.5vw, 60px);
+  transition: padding 0.4s ease;
+}
+.site-header.scrolled .header-container-fab {
+  padding: 14px clamp(24px, 3.5vw, 60px);
+}
+.brand-logo-fab {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+.main-nav-fab ul {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav-fab a {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.main-nav-fab a:hover,
+.main-nav-fab a.active {
+  color: #E8400A;
+}
+
+/* Phone Call Badge */
+.header-phone-fab {
+  display: flex;
+  align-items: center;
+}
+.phone-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.phone-icon-box {
+  width: 42px;
+  height: 42px;
+  background: #E8400A;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(232, 64, 10, 0.35);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.phone-number-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.phone-badge-link:hover {
+  transform: translateY(-2px);
+}
+.phone-badge-link:hover .phone-icon-box {
+  background: #ff4d12;
+  transform: scale(1.05);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.nav-toggle span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 999px;
+  transition: var(--transition);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  height: 100svh;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.06);
+  animation: heroZoom 14s ease-out forwards;
+}
+@keyframes heroZoom {
+  to { transform: scale(1); }
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.68) 0%,
+    rgba(0, 0, 0, 0.55) 40%,
+    rgba(0, 0, 0, 0.72) 100%
+  );
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 0 clamp(24px, 4vw, 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hero small label */
+.hero-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Giant heading */
+.hero-giant {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(4.5rem, 14vw, 16rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.88;
+  color: #E8DCD5;
+  margin: 0;
+  padding: 0;
+}
+.hero-giant-line {
+  display: block;
+}
+
+/* Right-side secondary content */
+.hero-secondary {
+  position: absolute;
+  right: clamp(24px, 8vw, 10%);
+  bottom: clamp(80px, 15vh, 25%);
+  max-width: 420px;
+  z-index: 3;
+}
+.hero-secondary-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hero-secondary-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 30px;
+  max-width: 360px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero CTA */
+.btn-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: var(--accent);
+  color: var(--dark);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-hero-cta:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(244, 163, 0, 0.4);
+}
+
+/* Hero entrance animations */
+.hero-anim {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hero-anim[data-hero-delay="1"] {
+  transition-delay: 0.3s;
+}
+.hero-anim[data-hero-delay="2"] {
+  transition-delay: 0.7s;
+  transform: translateY(40px);
+}
+.hero-anim.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide old hero classes if they leak */
+.hero-tagline,
+.hero-content,
+.hero-subtitle,
+.hero-actions,
+.scroll-cue {
+  display: none !important;
+}
+
+/* ---------- Section headings ---------- */
+.section-head {
+  max-width: 820px;
+  margin: 0 auto 72px;
+}
+.section-tagline {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.section-tagline::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+}
+.section-title {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+.section-subtitle {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 640px;
+}
+
+/* ---------- Process ---------- */
+.process-section {
+  background: #F5EDE4;
+  padding: clamp(80px, 9vw, 140px) 0 clamp(40px, 4vw, 60px);
+}
+.process-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+
+/* Orange accent text */
+.text-accent {
+  color: #E8400A;
+}
+
+/* Heading row: heading full-width, paragraph below-right */
+.process-head-row {
+  display: block;
+}
+.process-head-left {
+  max-width: 100%;
+}
+.process-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3rem, 5.2vw, 6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: #111111;
+  margin: 0;
+}
+.process-head-right {
+  max-width: 430px;
+  margin-left: auto;
+  margin-top: clamp(20px, 2.5vw, 36px);
+}
+.process-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Cards grid */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: clamp(60px, 7vw, 110px);
+  border-top: none;
+}
+
+/* Individual card */
+.process-card {
+  background: #EAE0D5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: clamp(32px, 3vw, 44px) clamp(24px, 2.5vw, 32px);
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s cubic-bezier(0.2, 0.65, 0.2, 1), background-color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.process-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #E8400A;
+  transition: width 0.4s ease;
+}
+.process-card:hover {
+  transform: translateY(-8px);
+  background: #E6D8CA;
+  border-color: rgba(232, 64, 10, 0.3);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+}
+.process-card:hover::after {
+  width: 100%;
+}
+
+/* Card top bar (Icon + Number) */
+.process-card-icon {
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.process-card-icon-badge {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s ease, transform 0.4s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.process-card-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: #111111;
+  stroke-width: 1.5;
+  transition: stroke 0.4s ease, transform 0.4s ease;
+}
+.process-card:hover .process-card-icon-badge {
+  background: #E8400A;
+  transform: scale(1.05);
+}
+.process-card:hover .process-card-icon svg {
+  stroke: #ffffff;
+}
+
+/* Card body */
+.process-card-body {
+  margin-top: auto;
+  padding-top: 36px;
+}
+.process-card-body .step-number {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #E8400A;
+  margin-bottom: 8px;
+}
+.process-card-body h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  color: #111111;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+.process-card:hover .process-card-body h3 {
+  color: #E8400A;
+}
+.process-card-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #555555;
+  margin: 0;
+}
+
+/* Remove old process-step styles from leaking */
+.process-step {
+  display: none !important;
+}
+
+/* ---------- About (Fabrecor-style) ---------- */
+.about-section {
+  background: #F5EDE4;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(40px, 4vw, 70px) 0;
+}
+.about-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+.about-grid-fab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(36px, 4vw, 70px);
+  align-items: stretch;
+}
+
+/* Image */
+.about-media-fab {
+  position: relative;
+}
+.about-media-fab img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Content */
+.about-content-fab {
+  padding-top: clamp(10px, 2vw, 30px);
+}
+.about-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2.2rem, 3.5vw, 3.8rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #111;
+  margin: 0 0 clamp(20px, 2.5vw, 32px) 0;
+}
+.about-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #555;
+  margin-bottom: clamp(28px, 3vw, 40px);
+  max-width: 480px;
+}
+
+/* CTA Button */
+.btn-fab-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: #E8400A;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 18px 15px 28px;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+  margin-bottom: clamp(40px, 4vw, 60px);
+}
+.btn-fab-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  margin-left: 16px;
+  transition: background 0.35s ease;
+}
+.btn-fab-cta:hover {
+  background: #cf3808;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(232, 64, 10, 0.3);
+}
+.btn-fab-cta:hover .btn-fab-arrow {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Highlights */
+.about-highlights {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: clamp(24px, 3vw, 36px);
+}
+.highlights-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #111;
+  margin-bottom: 18px;
+}
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.highlights-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  padding-left: 18px;
+  position: relative;
+}
+.highlights-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #111;
+  font-size: 1.1rem;
+}
+
+/* Hide old about styles from leaking */
+.about-grid, .about-media, .about-content { display: none !important; }
+
+/* ---------- Products (Fabrecor dark style) ---------- */
+.products-section {
+  background: #111111;
+  padding: clamp(70px, 8vw, 120px) 0;
+}
+.products-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+
+/* Header row */
+.products-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: clamp(40px, 5vw, 70px);
+}
+.products-head-left {
+  flex: 0 1 60%;
+}
+.products-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: #fff;
+  margin: 0;
+}
+.text-accent-light {
+  color: #E8400A;
+}
+.products-head-right {
+  flex: 0 1 38%;
+  max-width: 400px;
+  padding-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.products-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+.btn-products-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding-bottom: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.btn-products-all:hover {
+  color: #E8400A;
+  border-color: #E8400A;
+}
+
+/* Cards grid — 5 cols */
+.products-grid-fab {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+/* Card */
+.product-card-fab {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #1a1a1a;
+}
+.product-card-img {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+.product-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  filter: saturate(0.8) brightness(0.85);
+}
+.product-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.9) 0%,
+    rgba(0,0,0,0.4) 45%,
+    rgba(0,0,0,0.1) 100%
+  );
+  transition: background 0.4s ease;
+}
+.product-card-fab:hover .product-card-img img {
+  transform: scale(1.07);
+}
+.product-card-fab:hover .product-card-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.55) 55%,
+    rgba(0,0,0,0.2) 100%
+  );
+}
+
+/* Card info — sits at bottom over image */
+.product-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: clamp(18px, 2vw, 28px);
+}
+.product-num {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #E8400A;
+  margin-bottom: 8px;
+}
+.product-card-info h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.product-card-info p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 14px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.product-link {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E8400A;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease 0.05s, transform 0.4s ease 0.05s;
+}
+.product-card-fab:hover .product-card-info p,
+.product-card-fab:hover .product-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide old product styles */
+.products-grid, .product-card, .product-media,
+.product-body, .card-number { display: none !important; }
+
+/* ---------- Section 05 — Statement Banner ---------- */
+.statement-banner {
+  position: relative;
+  min-height: 52vh;
+  padding: clamp(50px, 6vw, 90px) 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/images/hero/hero-section.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Overlay — stronger at left/bottom where text sits */
+.statement-overlay-fab {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.2) 100%),
+    linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+}
+
+/* Giant heading — left area */
+.statement-heading-wrap {
+  position: relative;
+  left: 6%;
+  z-index: 3;
+  max-width: 750px;
+}
+.statement-giant {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #E8DCD5;
+  margin: 0;
+}
+
+/* Supporting copy — right area */
+.statement-copy-wrap {
+  position: absolute;
+  right: 6%;
+  bottom: clamp(36px, 6vh, 70px);
+  max-width: 380px;
+  z-index: 3;
+}
+.statement-copy {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+}
+
+/* ---------- Section 06 — Stats ---------- */
+.stats-section {
+  background: #F7F1EA;
+  padding: clamp(70px, 8vw, 120px) 0;
+}
+.stats-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+.stats-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8400A;
+  margin-bottom: clamp(40px, 5vw, 70px);
+  display: block;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  text-align: left;
+}
+.stat {
+  padding: 0 clamp(24px, 4vw, 56px);
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.stat:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.stat-number {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(4rem, 7vw, 9rem);
+  font-weight: 700;
+  color: #111111;
+  display: block;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+}
+.stat-plus {
+  color: #E8400A;
+  font-size: 0.7em;
+}
+.stat-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  display: block;
+  margin-top: 0;
+}
+.stats-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: clamp(40px, 5vw, 60px);
+  font-style: italic;
+}
+
+/* ---------- Section 07 — Projects (Fabrecor Industrial Style) ---------- */
+.projects-section {
+  background: #F7F1EA;
+  padding: clamp(80px, 9vw, 140px) 0 clamp(80px, 8vw, 120px);
+}
+.projects-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+
+/* Header row: heading left, paragraph right */
+.projects-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(40px, 5vw, 80px);
+  margin-bottom: clamp(50px, 6vw, 90px);
+}
+.projects-head-left {
+  flex: 0 1 65%;
+}
+.projects-tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8400A;
+  margin-bottom: 14px;
+  display: block;
+}
+.projects-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #111111;
+  margin: 0;
+}
+.projects-head-right {
+  flex: 0 1 35%;
+  max-width: 420px;
+  padding-bottom: 8px;
+}
+.projects-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Projects Layout Grid */
+.projects-grid-fab {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 40px);
+}
+
+/* Base Project Card */
+.project-card-fab {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: transparent;
+}
+.project-img-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #1a1a1a;
+}
+.project-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.9);
+  transition: transform 0.6s cubic-bezier(0.2, 0.65, 0.2, 1), filter 0.5s ease;
+}
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+.project-hover-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #E8400A;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 4;
+}
+
+/* Hover Interactivity */
+.project-card-fab:hover .project-img-wrap img {
+  transform: scale(1.05);
+  filter: saturate(1.1);
+}
+.project-card-fab:hover .project-overlay {
+  opacity: 0.95;
+}
+.project-card-fab:hover .project-hover-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project Meta Bar under image */
+.project-meta-bar {
+  padding-top: 18px;
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.project-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #E8400A;
+}
+.project-cat {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #777;
+}
+.project-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #111;
+  margin: 4px 0 0;
+  transition: color 0.3s ease;
+}
+.project-card-fab:hover .project-title {
+  color: #E8400A;
+}
+
+/* Featured Large Main Card */
+.project-featured .project-img-wrap {
+  aspect-ratio: 21 / 9;
+  min-height: 380px;
+}
+.project-featured .project-title {
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+}
+
+/* Sub-Projects Grid Row (3 cards) */
+.projects-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 2.5vw, 32px);
+}
+.projects-sub-grid .project-img-wrap {
+  aspect-ratio: 4 / 3;
+}
+
+/* CTA at Bottom */
+.projects-cta-wrap {
+  margin-top: clamp(50px, 6vw, 80px);
+  text-align: center;
+}
+.btn-projects-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #111111;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 36px;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+}
+.btn-projects-cta:hover {
+  background: #E8400A;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(232, 64, 10, 0.3);
+}
+
+/* ---------- Section 08 — Industries (Fabrecor Interactive List) ---------- */
+.industries-section {
+  background: #F7F1EA;
+  padding: clamp(80px, 9vw, 140px) 0 clamp(100px, 12vw, 180px);
+}
+.industries-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+
+/* Header row: heading full-width, paragraph below-right */
+.industries-head-row {
+  display: block;
+  margin-bottom: clamp(40px, 5vw, 70px);
+}
+.industries-head-left {
+  max-width: 100%;
+}
+.industries-tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8400A;
+  margin-bottom: 14px;
+  display: block;
+}
+.industries-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3rem, 5.2vw, 6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: #111111;
+  margin: 0;
+}
+.industries-head-right {
+  max-width: 430px;
+  margin-left: auto;
+  margin-top: clamp(20px, 2.5vw, 36px);
+}
+.industries-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* List wrap & layout */
+.industries-list-wrap {
+  position: relative;
+  display: flex;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: flex-start;
+}
+.industries-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Industry row */
+.industry-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(20px, 2.5vw, 32px) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.35s ease;
+}
+.industry-row:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+}
+.ind-left {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2.5vw, 36px);
+}
+.ind-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #E8400A;
+}
+.ind-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 4.2rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.2, 1), color 0.35s ease;
+}
+.ind-arrow {
+  color: #999;
+  display: flex;
+  align-items: center;
+  transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.2, 1), color 0.35s ease;
+}
+
+/* Row Hover State */
+.industry-row:hover .ind-name {
+  color: #E8400A;
+  transform: translateX(12px);
+}
+.industry-row:hover .ind-arrow {
+  color: #E8400A;
+  transform: translateX(8px);
+}
+.industry-row:hover {
+  border-bottom-color: rgba(232, 64, 10, 0.4);
+}
+
+/* Floating Preview Box on Desktop */
+.industry-preview-floating {
+  position: sticky;
+  top: 120px;
+  width: 38vw;
+  max-width: 600px;
+  height: 440px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  background: #1a1a1a;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  align-self: flex-start;
+}
+.industry-preview-floating img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.35s ease, transform 0.5s ease;
+}
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 60%);
+}
+
+.ind-mobile-img {
+  display: none;
+}
+
+/* ---------- Section 09 — Why Riopak / Advantage ---------- */
+.why-section {
+  background: #0A0A0A;
+  color: #fff;
+  padding: clamp(80px, 9vw, 140px) 0;
+  min-height: 90vh;
+}
+.why-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+.why-head-row {
+  margin-bottom: clamp(40px, 5vw, 70px);
+}
+.why-tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8400A;
+  margin-bottom: 14px;
+  display: block;
+}
+.why-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3.5rem, 7vw, 8.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #E8DCD5;
+  margin: 0;
+}
+
+/* Why Rows List */
+.why-list {
+  display: flex;
+  flex-direction: column;
+}
+.why-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(26px, 3vw, 44px) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.2, 1), border-color 0.35s ease;
+  position: relative;
+}
+.why-row:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.why-row-left {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3vw, 40px);
+  flex: 0 1 60%;
+}
+.why-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #E8400A;
+}
+.why-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 4.5vw, 4.8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #F5F2EE;
+  margin: 0;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+.why-row-right {
+  flex: 0 1 40%;
+  max-width: 440px;
+}
+.why-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  transition: color 0.35s ease;
+}
+
+/* Row Hover State */
+.why-row:hover {
+  transform: translateX(10px);
+  border-top-color: rgba(232, 64, 10, 0.4);
+}
+.why-row:hover .why-title {
+  color: #E8400A;
+}
+.why-row:hover .why-desc {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* ---------- Section 10 — Cinematic Machine / Video ---------- */
+.video-banner {
+  position: relative;
+  min-height: 85vh;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/images/hero/hero-section.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.video-overlay-fab {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.2) 100%),
+    linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  z-index: 1;
+}
+.video-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(30px, 4vw, 50px);
+}
+.video-giant {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3.2rem, 7vw, 8.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #E8DCD5;
+  margin: 0;
+  max-width: 1000px;
+}
+
+/* ---------- Section 11 — Testimonial / Customer Experience ---------- */
+.testimonial-section {
+  background: #F7F1EA;
+  padding: clamp(80px, 9vw, 140px) 0;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+.testimonial-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+.testimonial-head-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(40px, 5vw, 80px);
+}
+.testimonial-head-left {
+  flex: 0 1 58%;
+}
+.testimonial-tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8400A;
+  margin-bottom: 14px;
+  display: block;
+}
+.testimonial-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #111111;
+  margin: 0;
+}
+.testimonial-head-right {
+  flex: 0 1 42%;
+  max-width: 480px;
+}
+.quote-card-fab {
+  position: relative;
+  padding-top: 10px;
+}
+.quote-mark {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.5rem;
+  line-height: 0.7;
+  color: #E8400A;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+.quote-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.05rem, 1.3vw, 1.35rem);
+  line-height: 1.55;
+  font-weight: 400;
+  color: #222222;
+  margin-bottom: 24px;
+}
+.quote-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding-top: 16px;
+}
+.author-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111;
+}
+.author-sub {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* ---------- Section 12 — Final CTA ---------- */
+.cta-banner {
+  position: relative;
+  min-height: 85vh;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/images/hero/hero-section.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.cta-overlay-fab {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.2) 100%),
+    linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  z-index: 1;
+}
+.cta-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+.cta-grid-fab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(30px, 4vw, 50px);
+  max-width: 1000px;
+}
+.cta-giant {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3.5rem, 7.5vw, 9rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #E8DCD5;
+  margin: 0;
+}
+.cta-content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 540px;
+}
+.cta-copy {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+.cta-actions-fab {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.btn-secondary-link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.btn-secondary-link:hover {
+  color: #E8400A;
+  border-color: #E8400A;
+}
+
+/* ---------- Section 13 — Footer (Fabrecor Industrial Style) ---------- */
+.site-footer {
+  background: #080808;
+  color: #fff;
+  padding-top: clamp(80px, 9vw, 140px);
+  padding-bottom: 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+.footer-container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+}
+
+/* Top 4-Column Main Grid */
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: clamp(30px, 4vw, 60px);
+  padding-bottom: clamp(50px, 6vw, 80px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand Column */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer-logo-badge {
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.footer-brand-logo {
+  height: 75px;
+  width: auto;
+  display: block;
+}
+.footer-brand-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  max-width: 320px;
+}
+.footer-direct-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+  width: 100%;
+}
+.footer-contact-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: all 0.35s ease;
+  width: fit-content;
+}
+.footer-contact-badge:hover {
+  background: #E8400A;
+  border-color: #E8400A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(232, 64, 10, 0.3);
+}
+
+/* Links Columns */
+.footer-col-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8400A;
+  margin-bottom: 22px;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+.footer-links a:hover {
+  color: #E8400A;
+  transform: translateX(5px);
+}
+
+/* Address & Emails */
+.footer-contact-block {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-address {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+.footer-emails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer-email-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-email-link:hover {
+  color: #E8400A;
+}
+
+/* Giant Brand Typography at Bottom */
+.footer-giant-brand {
+  text-align: center;
+  padding: clamp(30px, 4vw, 60px) 0 10px;
+  overflow: hidden;
+}
+.giant-brand-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 8.2vw, 9.5rem);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: rgba(232, 220, 213, 0.12);
+  margin: 0;
+  white-space: nowrap;
+  user-select: none;
+  transition: color 0.5s ease;
+}
+.site-footer:hover .giant-brand-text {
+  color: rgba(232, 220, 213, 0.18);
+}
+
+/* Bottom Legal Bar */
+.footer-bottom-fab {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.copyright-text, .footer-credit {
+  margin: 0;
+}

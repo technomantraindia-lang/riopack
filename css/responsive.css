@@ -1,0 +1,355 @@
+/* ============ RIOPAK ENGINEERS – Responsive Styles ============ */
+
+/* ---------- Tablet: <= 1024px ---------- */
+@media (max-width: 1024px) {
+  .section { padding: 90px 0; }
+
+  .main-nav ul { gap: 22px; }
+  .main-nav a { font-size: 0.75rem; letter-spacing: 1px; }
+
+  .about-grid { gap: 50px; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 48px; }
+
+  /* Hero tablet adjustments */
+  .hero-giant {
+    font-size: clamp(4rem, 12vw, 10rem);
+  }
+  .hero-secondary {
+    max-width: 340px;
+    right: clamp(20px, 4vw, 5%);
+    bottom: clamp(60px, 12vh, 20%);
+  }
+  .hero-secondary-heading {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  }
+  .hero-secondary-text {
+    font-size: 0.88rem;
+  }
+
+  /* Process tablet adjustments */
+  .process-heading {
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
+  }
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .process-card {
+    min-height: 300px;
+  }
+}
+
+/* ---------- Mobile nav: <= 860px ---------- */
+@media (max-width: 860px) {
+  .nav-toggle { display: flex; z-index: 1200; }
+
+  .header-phone-fab { display: none; }
+
+  .main-nav-fab {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(320px, 80vw);
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(14px);
+    transition: right 0.4s ease;
+    z-index: 1100;
+    padding-top: 100px;
+  }
+  .main-nav-fab.open { right: 0; box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5); }
+
+  .main-nav-fab ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 32px;
+  }
+  .main-nav-fab li { width: 100%; }
+  .main-nav-fab a {
+    display: block;
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 1rem;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .main-nav-fab a.active {
+    color: #E8400A !important;
+  }
+
+  body.nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  body.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
+
+/* ---------- Mobile: <= 768px ---------- */
+@media (max-width: 768px) {
+  /* Hero mobile recomposition — vertical stack */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+  .hero-inner {
+    padding: 120px clamp(20px, 5vw, 32px) 60px;
+    justify-content: flex-end;
+  }
+  .hero-giant {
+    font-size: clamp(3.2rem, 16vw, 5.5rem);
+    line-height: 0.9;
+    margin-bottom: 30px;
+  }
+  .hero-secondary {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    max-width: 100%;
+  }
+  .hero-secondary-heading {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    margin-bottom: 16px;
+  }
+  .hero-secondary-text {
+    font-size: 0.88rem;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .btn-hero-cta {
+    width: 100%;
+    max-width: 340px;
+    justify-content: center;
+    padding: 14px 32px;
+  }
+
+  /* Process mobile recomposition */
+  .process-head-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .process-head-left {
+    flex: 1;
+    max-width: 100%;
+  }
+  .process-head-right {
+    flex: 1;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .process-heading {
+    font-size: clamp(2.4rem, 8vw, 3.6rem);
+  }
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 50px;
+  }
+  .process-card {
+    min-height: 280px;
+  }
+
+  /* About mobile recomposition */
+  .about-grid-fab {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .about-media-fab img {
+    min-height: 340px;
+  }
+
+  /* Products mobile */
+  .products-grid-fab {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .products-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .products-head-left, .products-head-right {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  /* Statement mobile stack */
+  .statement-banner {
+    min-height: 48vh;
+    padding: 50px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-attachment: scroll;
+  }
+  .statement-heading-wrap {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-bottom: 24px;
+  }
+  .statement-giant {
+    font-size: clamp(3.2rem, 12vw, 5.5rem);
+  }
+  .statement-copy-wrap {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    max-width: 100%;
+  }
+
+  /* Stats 2x2 grid on mobile */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+  .stat {
+    border-left: none;
+    padding: 0;
+  }
+
+  /* Projects mobile rules */
+  .projects-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .projects-head-left, .projects-head-right {
+    flex: 1;
+    max-width: 100%;
+  }
+  .projects-sub-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .project-featured .project-img-wrap {
+    aspect-ratio: 16 / 9;
+    min-height: 260px;
+  }
+
+  /* Industries mobile rules */
+  .industries-head-right {
+    margin-top: 20px;
+  }
+  .industries-list-wrap {
+    flex-direction: column;
+  }
+  .industry-preview-floating {
+    display: none !important;
+  }
+  .ind-name {
+    font-size: clamp(1.4rem, 5.5vw, 2.6rem);
+  }
+
+  /* Why Riopak mobile rules */
+  .why-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px 0;
+  }
+  .why-row-left, .why-row-right {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  /* Section 10 Video banner mobile rules */
+  .video-banner {
+    min-height: 70vh;
+    height: 75vh;
+  }
+  .video-giant {
+    font-size: clamp(2.8rem, 10vw, 5rem);
+  }
+
+  /* Testimonial mobile rules */
+  .testimonial-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .testimonial-head-left, .testimonial-head-right {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  /* Final CTA mobile rules */
+  .cta-banner {
+    min-height: 75vh;
+    height: 80vh;
+  }
+  .cta-giant {
+    font-size: clamp(3rem, 11vw, 5.5rem);
+  }
+  .cta-actions-fab {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  /* Footer mobile rules */
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-brand-col {
+    grid-column: 1 / -1;
+  }
+  .giant-brand-text {
+    font-size: clamp(1.8rem, 8vw, 4.8rem);
+  }
+  .footer-bottom-fab {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* ---------- Small mobile: <= 520px ---------- */
+@media (max-width: 520px) {
+  .container { width: 88%; }
+  .section { padding: 70px 0; }
+
+  .brand-logo { height: 52px; }
+
+  .hero-label { letter-spacing: 3px; font-size: 0.7rem; }
+  .hero-giant {
+    font-size: clamp(2.8rem, 14vw, 4.5rem);
+  }
+  .hero-secondary-heading {
+    font-size: clamp(1.4rem, 5.5vw, 1.8rem);
+  }
+
+  /* Process small mobile — single column */
+  .process-heading {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 40px;
+  }
+  .process-card {
+    min-height: 260px;
+  }
+
+  .projects-sub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid-fab {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-grid,
+  .features-grid { grid-template-columns: 1fr; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  .btn { padding: 14px 28px; }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+}
