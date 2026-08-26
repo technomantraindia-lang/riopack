@@ -5,16 +5,17 @@
 - Indexed source files: 8
 - Structural edges: 1
 - Matched end-to-end flows: 0
-- Updated: 2026-08-26T06:08:24.717Z
+- Updated: 2026-08-26T09:16:41.394Z
 
 ## Dependency edges
-- IMPORT riopak-website/index.html -> riopak-website/css/style.css, riopak-website/css/animations.css, riopak-website/css/responsive.css, riopak-website/js/navigation.js, riopak-website/js/animations.js, riopak-website/js/smooth-scroll.js, riopak-website/js/main.js
+- IMPORT index.html -> css/style.css, css/animations.css, css/responsive.css, js/navigation.js, js/animations.js, js/smooth-scroll.js, js/main.js
 
 ## Symbols
-- SYMBOL riopak-website/js/animations.js: tick
+- SYMBOL js/animations.js: tick
+- SYMBOL js/navigation.js: updateHeader
 
 ## UI/style selectors
-- UI riopak-website/css/responsive.css: .section, .main-nav, .about-grid, .process-grid, .process-step, .footer-grid, .stats-grid, .nav-toggle, #fff, .hero-content, .hero, .hero-actions, .btn-lg, .about-media
-- UI riopak-website/css/style.css: #f4a300, #ffb833, #f5f5f3, #ffffff, .container, .section, .section-alt, .center, .btn, .btn-primary, .btn-outline, .btn-light, .btn-lg, .link-arrow
-- UI riopak-website/index.html: #siteHeader, #mainNav, #navToggle, #home, #about, #products, #projects, #industries, #year, .site-header, .container, .header-inner, .brand, .brand-logo
-- UI riopak-website/css/animations.css: .reveal, .delay-1, .delay-2, .delay-3, .delay-4, .delay-5
+- UI index.html: #siteHeader, #mainNav, #navToggle, #home, #process, #about, #products, #statement, #stats, #projects, #industries, #indPreviewImg, #advantage, #cinematic-banner
+- UI css/style.css: #f4a300, #ffb833, #f5f5f3, #ffffff, .container, .section, .section-alt, .center, .btn, .btn-primary, .btn-outline, .btn-light, .btn-lg, .link-arrow
+- UI css/animations.css: .reveal, .delay-1, .delay-2, .delay-3, .delay-4, .delay-5
+- UI css/responsive.css: .section, .main-nav, .about-grid, .footer-grid, .stats-grid, .hero-giant, .hero-secondary, .hero-secondary-heading, .hero-secondary-text, .process-heading, .process-grid, .process-card, .nav-toggle, .header-phone-fab
