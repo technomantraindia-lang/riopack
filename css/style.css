@@ -1596,12 +1596,14 @@ h1, h2, h3 {
 }
 .testimonial-head-row {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: clamp(40px, 5vw, 80px);
+  gap: clamp(30px, 4vw, 60px);
 }
 .testimonial-head-left {
-  flex: 0 1 58%;
+  flex: 0 0 58%;
+  max-width: 58%;
 }
 .testimonial-tagline {
   font-family: 'Oswald', sans-serif;
@@ -1615,17 +1617,17 @@ h1, h2, h3 {
 }
 .testimonial-heading {
   font-family: 'Oswald', sans-serif;
-  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
+  font-size: clamp(2.8rem, 4.5vw, 5.2rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.04em;
-  line-height: 0.9;
+  line-height: 0.92;
   color: #111111;
   margin: 0;
 }
 .testimonial-head-right {
-  flex: 0 1 42%;
-  max-width: 480px;
+  flex: 0 0 38%;
+  max-width: 38%;
 }
 .quote-card-fab {
   position: relative;
