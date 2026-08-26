@@ -218,14 +218,11 @@
     flex: 1;
     max-width: 100%;
   }
-  .projects-sub-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  .projects-grid-fab {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
-  .project-featured .project-img-wrap {
-    aspect-ratio: 16 / 9;
-    min-height: 260px;
-  }
+}
 
   /* Industries mobile rules */
   .industries-head-right {
