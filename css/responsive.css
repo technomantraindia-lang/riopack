@@ -262,16 +262,7 @@
     font-size: clamp(2.8rem, 10vw, 5rem);
   }
 
-  /* Testimonial mobile rules */
-  .testimonial-head-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-  }
-  .testimonial-head-left, .testimonial-head-right {
-    flex: 1;
-    max-width: 100%;
-  }
+  /* Testimonial mobile rules: keep side-by-side layout above 640px */
 
   /* Final CTA mobile rules */
   .cta-banner {
@@ -351,5 +342,15 @@
 
   .footer-top-grid {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .testimonial-head-left, .testimonial-head-right {
+    flex: 1;
+    max-width: 100%;
   }
 }
