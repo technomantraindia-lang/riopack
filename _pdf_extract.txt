@@ -1,0 +1,313 @@
+Riopak About Page Blueprint    1
+RIOPAK ENGINEERS
+ABOUT PAGE BLUEPRINT
+Fabrecor-inspired editorial / industrial direction
+DESIGN SYSTEM
+CONTENT DIRECTION
+Warm cream + deep black + Riopak orange.
+Oversized condensed typography. Full-bleed
+industrial imagery. Large whitespace. Minimal
+borders. Editorial composition.
+Position Riopak as a packaging and processing
+machinery manufacturer focused on precision,
+reliability, flexibility, control and practical customer
+support.
+REFERENCE
+Use the Fabrecor Webflow template as the visual reference: large editorial headings, image-led sections, oversized
+statistics, industrial photography, asymmetric layouts and restrained orange accents. The About page should feel like
+the same design family as the completed Riopak homepage.
+CONTENT SAFETY
+Use only Riopak facts that are verified. Do not carry over the construction-company history, awards, public-company
+claims, placeholder statistics or other template residue currently visible on the old Riopak About page.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    2
+01 — PAGE ROLE
+The About page explains what Riopak engineers, how it approaches packaging problems and why customers can
+rely on its machines.
+PRIMARY MESSAGE
+Riopak Engineers designs and manufactures
+packaging, filling and weighing machinery
+for accurate, efficient and reliable
+production.
+The page should move from who we are → what we engineer → how we work → what makes us dependable →
+where our solutions are used → contact / quote.
+ABOUT PAGE FLOW
+01
+CINEMATIC ABOUT HERO
+Brand statement + machinery image
+02
+WHO WE ARE
+Short company introduction + visual
+03
+ENGINEERING APPROACH
+Precision / reliability / flexibility / control
+04
+WHAT WE ENGINEER
+Capabilities and machine categories
+05
+HOW WE WORK
+Requirement → engineering → build → support
+06
+WHY RIOPAK
+Key differentiators
+07
+INDUSTRIES
+Applications across target sectors
+08
+PROOF / TRUST
+Verified client proof or restrained placeholder
+09
+FINAL CTA
+Get a quote / contact the team
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    3
+02 — 01 — CINEMATIC ABOUT HERO
+LABEL
+ABOUT RIOPAK
+HERO HEADING
+ENGINEERING PACKAGING
+PERFORMANCE.
+SUPPORTING COPY
+Riopak Engineers designs and manufactures packaging, filling and weighing machinery built around accuracy,
+reliability and the production requirements of every customer.
+DESIGN
+Use a full-width cinematic packaging-machine image or video. Keep the left side relatively dark so oversized
+typography remains readable. Use warm orange highlights on stainless-steel machinery. The heading is huge,
+condensed, uppercase and off-white, with one selective Riopak-orange accent.
+CTA
+PRIMARY: GET A QUOTE → SECONDARY: EXPLORE OUR MACHINES →
+ANIMATION
+Slow background scale/parallax. Heading reveals upward. CTA appears after the heading. No excessive effects.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    4
+03 — 02 — WHO WE ARE
+HEADING
+ENGINEERED FOR PRODUCTION. BUILT
+FOR RELIABILITY.
+CONTENT
+At Riopak Engineers, we design and manufacture high-performance packaging, filling and weighing machinery for
+businesses that need accurate, consistent and dependable production. Our solutions span pouch packaging, bottle
+filling, fillers, weighers and related automation, with configurations adapted to product and production requirements.
+LAYOUT
+Use a 55/45 asymmetric layout. Large machinery image on one side, editorial copy on the other. Add a small orange
+label such as ENGINEERING APPROACH. Keep generous whitespace and avoid a dense paragraph wall.
+TRUST POINTS
+PRECISION
+Accurate filling, weighing, dosing and sealing for
+consistent production.
+RELIABILITY
+Industrial-grade construction and practical machine
+design for demanding environments.
+FLEXIBILITY
+Configurations can be adapted to products, pack
+formats and production needs.
+CONTROL
+PLC and HMI-based operation for practical machine
+management.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    5
+04 — 03 — ENGINEERING APPROACH
+LARGE STATEMENT
+PRECISION IN EVERY PACK.
+SUPPORTING COPY
+From accurate dosing and weighing to dependable forming, filling and sealing, every machine is designed around
+consistent production performance.
+DESIGN DIRECTION
+Use a dark full-width machinery image with oversized typography layered into the composition. Keep the copy
+minimal. Echo the homepage cinematic sections while remaining About-specific.
+BENEFIT STRIP
+01
+ACCURACY
+Controlled filling and weighing
+02
+DURABILITY
+Industrial machine construction
+03
+FLEXIBILITY
+Product and format adaptability
+04
+CONTROL
+PLC + HMI-based operation
+05
+SUPPORT
+Technical service and spares
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    6
+05 — 04 — WHAT WE ENGINEER
+HEADING
+PACKAGING SYSTEMS BUILT AROUND THE
+PRODUCT.
+VERIFIED CATEGORIES
+VFFS MACHINES
+Vertical Form Fill Seal systems for powders, granules,
+snacks, liquids, spices and other suitable products.
+BOTTLE FILLING
+Automated bottle filling solutions with configurable filling
+volume, sensors and optional capping.
+FILLERS & WEIGHERS
+Auger, volumetric cup, weigh and liquid-pump filling
+configurations depending on the product.
+ACCESSORIES
+Supporting components and automation accessories
+that complete the packaging workflow.
+SERVICE & SPARES
+Technical assistance and spare-parts support for
+continued machine operation.
+INTERACTION
+Use large image-led cards. Hover slightly scales the image, reveals an orange arrow and increases title contrast. On
+mobile, stack the cards vertically.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    7
+06 — 05 — HOW WE WORK
+HEADING
+FROM PRODUCT REQUIREMENT TO
+PRODUCTION.
+PROCESS CARDS
+01 REQUIREMENT
+Understand the product, pack format, fill weight,
+container or pouch, production target and operating
+conditions.
+02 ENGINEERING
+Select the appropriate machine architecture, filling
+method, controls and configuration for the application.
+03 BUILD & TEST
+Manufacture, assemble and check the machine for
+dependable operation and required packaging
+performance.
+04 INSTALL & SUPPORT
+Support installation, commissioning, operation and
+ongoing service with practical technical assistance.
+IMPORTANT
+Do not claim a specific factory acceptance test, installation process, delivery guarantee, certification or project
+methodology unless Riopak has confirmed it. The workflow above is a design/content framework and should be
+aligned with the company's actual process before publication.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    8
+07 — 06 — WHY RIOPAK
+LABEL
+THE RIOPAK ADVANTAGE
+HEADING
+MORE THAN A MACHINE.
+ PRECISION
+Controlled filling and weighing for consistent production.
+RELIABILITY
+Industrial machine construction designed for demanding environments.
+FLEXIBILITY
+Configurations suited to different products, pack formats and production needs.
+CONTROL
+PLC and HMI-based operation for practical machine management.
+SUPPORT
+Technical service and spares support for ongoing operation.
+DESIGN
+Use oversized benefit names, thin separators, orange numbering and subtle hover/scroll reveals. Avoid five rounded
+cards.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    9
+08 — 07 — INDUSTRIES WE SERVE
+HEADING
+PACKAGING SOLUTIONS ACROSS
+INDUSTRIES.
+ 01
+FOOD & BEVERAGE
+→
+02
+AGRO PRODUCTS
+→
+03
+SPICES & SEASONINGS
+→
+04
+SNACKS & CONFECTIONERY
+→
+05
+PHARMACEUTICALS
+→
+06
+COSMETICS & PERSONAL CARE
+→
+07
+DETERGENTS & WASHING LIQUIDS
+→
+08
+CHEMICALS & FERTILIZERS
+→
+INTERACTION
+On desktop, hovering an industry reveals a floating image on the right. On mobile, convert the interaction into
+expandable image rows. Keep typography large and the list uncluttered.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    10
+09 — 08 — PROOF / TRUST
+HEADING
+BUILT AROUND CUSTOMER
+REQUIREMENTS.
+CUSTOMER TESTIMONIALS
+If verified Riopak customer testimonials are available, use one large featured quote at a time with customer name,
+company and industry. If they are not supplied, keep a clean visual placeholder. Never invent a quote or customer
+identity.
+CLIENT LOGOS
+If the logos currently used on the Riopak site are genuine clients and approved for publication, retain them as a
+restrained 'Trusted by industry' proof strip. Use monochrome or low-contrast treatment so the section remains
+editorial.
+STATISTICS
+Do not reuse homepage statistics on the About page unless they are verified. Avoid placeholder figures and avoid
+template statistics such as 90%, 8K+, 24+ or 100% from the Fabrecor reference.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    11
+10 — 09 — FINAL CTA
+HEADING
+READY TO BUILD A BETTER PACKAGING
+LINE?
+COPY
+Tell us what you need to fill, weigh, seal or package. Our team can help identify the right Riopak solution for your
+production requirements.
+PRIMARY CTA
+GET A QUOTE →
+SECONDARY CTA
+CONTACT OUR TEAM →
+DESIGN
+Use a full-width Riopak machinery image/video with a dark overlay. Put the oversized heading on the left and the
+copy + CTA on the right. Use orange only for the primary CTA and small accents.
+FOOTER
+Use the same footer as the homepage so the site feels like one coherent system. Do not introduce a different footer
+design on the About page.
+
+=== PAGE BREAK ===
+Riopak About Page Blueprint    12
+11 — SEO + PAGE CONTENT
+SEO TITLE
+Riopak Engineers | About Us | Packaging & Processing Machinery
+META DESCRIPTION
+Learn about Riopak Engineers, a Vadodara-based manufacturer of packaging, filling and
+weighing machinery designed for accurate, efficient and reliable production.
+PRIMARY KEYWORD
+packaging machinery manufacturer
+SECONDARY
+TERMS
+VFFS machines, bottle filling machines, filling machines, weighing machines, packaging
+automation, packaging machinery India
+H1
+ENGINEERING PACKAGING PERFORMANCE.
+URL
+/about-us/
+SOURCE-BASED CONTENT NOTE
+The current Riopak website describes the company as a manufacturer of packaging, filling and weighing machinery
+and lists VFFS machines, bottle filling, fillers/weighers, accessories and service/spares. It also describes applications
+across food, pharma, agro and industrial sectors. These facts form the safe foundation for this blueprint.
+The current About page also contains obvious construction-template residue and unverified historical/metric claims.
+Those claims are deliberately excluded until Riopak confirms them.
+FINAL DESIGN RULE
+The About page must feel like Riopak:
+engineering-led, machinery-focused,
+precise, industrial and credible. The
+Fabrecor reference supplies the visual
+grammar, not the business facts.

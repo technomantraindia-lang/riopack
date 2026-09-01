@@ -14,19 +14,13 @@
   .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 48px; }
 
   /* Hero tablet adjustments */
+  .hero-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
   .hero-giant {
-    font-size: clamp(4rem, 12vw, 10rem);
-  }
-  .hero-secondary {
-    max-width: 340px;
-    right: clamp(20px, 4vw, 5%);
-    bottom: clamp(60px, 12vh, 20%);
-  }
-  .hero-secondary-heading {
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  }
-  .hero-secondary-text {
-    font-size: 0.88rem;
+    font-size: clamp(2.6rem, 7.5vw, 6rem);
   }
 
   /* Process tablet adjustments */
@@ -93,34 +87,52 @@
     min-height: 100svh;
   }
   .hero-inner {
-    padding: 120px clamp(20px, 5vw, 32px) 60px;
+    padding: clamp(95px, 14vh, 130px) 20px 40px;
     justify-content: flex-end;
+    width: 100%;
+  }
+  .hero-label {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: #E8400A;
+    margin-bottom: 10px;
+    display: inline-block;
   }
   .hero-giant {
-    font-size: clamp(3.2rem, 16vw, 5.5rem);
+    font-size: clamp(2.8rem, 11vw, 4.6rem);
     line-height: 0.9;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    letter-spacing: -0.03em;
   }
   .hero-secondary {
     position: relative;
     right: auto;
     bottom: auto;
     max-width: 100%;
+    margin-top: 10px;
   }
   .hero-secondary-heading {
-    font-size: clamp(1.5rem, 6vw, 2.2rem);
-    margin-bottom: 16px;
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    margin-bottom: 12px;
+    line-height: 1.05;
   }
   .hero-secondary-text {
-    font-size: 0.88rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.88);
+    margin-bottom: 20px;
     max-width: 100%;
-    margin-bottom: 24px;
   }
   .btn-hero-cta {
     width: 100%;
-    max-width: 340px;
+    max-width: 100%;
     justify-content: center;
-    padding: 14px 32px;
+    padding: 16px 24px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
   }
 
   /* Process mobile recomposition */
@@ -225,14 +237,49 @@
   .project-col-7, .project-col-5 {
     grid-column: span 1;
   }
-}
 
   /* Industries mobile rules */
+  .industries-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
   .industries-head-right {
-    margin-top: 20px;
+    margin-top: 0;
+    max-width: 100%;
+  }
+  .industries-list-wrap {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  .industries-list {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .industry-card-floating {
+    display: none !important;
+  }
+  .industry-row {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .ind-left {
+    gap: 16px;
+    width: 100%;
   }
   .ind-name {
-    font-size: clamp(1.4rem, 5.5vw, 2.6rem);
+    font-size: clamp(1.4rem, 5.5vw, 2.2rem);
+  }
+  .ind-subtext {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  .ind-arrow {
+    display: none;
   }
 
   /* Why Riopak mobile rules */
@@ -279,11 +326,43 @@
   }
 
   /* Footer mobile rules */
-  .footer-bottom-fab {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .site-footer {
+    padding-top: clamp(50px, 8vw, 80px);
+    padding-bottom: 28px;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-bottom: 36px;
+  }
+  .footer-brand-col {
+    align-items: flex-start;
     width: 100%;
+  }
+  .footer-brand-logo {
+    height: 60px;
+    width: auto;
+  }
+  .footer-contact-badge {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .footer-col-fab {
+    width: 100%;
+  }
+  .footer-bottom-fab {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .copyright-text,
+  .footer-credit {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
@@ -294,9 +373,9 @@
 
   .brand-logo { height: 52px; }
 
-  .hero-label { letter-spacing: 3px; font-size: 0.7rem; }
+  .hero-label { letter-spacing: 3.5px; font-size: 0.8rem; }
   .hero-giant {
-    font-size: clamp(2.8rem, 14vw, 4.5rem);
+    font-size: clamp(2.5rem, 10vw, 4.2rem);
   }
   .hero-secondary-heading {
     font-size: clamp(1.4rem, 5.5vw, 1.8rem);
@@ -333,5 +412,12 @@
   .footer-top-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+  .footer-bottom-fab {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 0.72rem;
   }
 }
