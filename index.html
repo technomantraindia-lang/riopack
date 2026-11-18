@@ -3,533 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riopak Engineers | Packaging & Processing Machinery</title>
-  <meta name="description" content="Riopak Engineers designs and manufactures packaging, filling and weighing machinery for accurate, efficient and reliable production across food, pharma, agro and industrial applications.">
+  <title>RIOPAK | Packaging Technologies — Complete Packaging Machinery Solutions</title>
+  <meta name="description" content="RIOPAK is a packaging machinery manufacturer based in Vadodara, Gujarat, India, delivering VFFS Machines, Auger Filling Machines, Multi-Head Weighing Systems, Screw Feeding Systems and Customized Packaging Lines.">
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home-catalis.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="site-header" id="siteHeader">
-    <div class="header-container-fab">
-      <a href="index.html" class="brand-fab">
-        <img src="assets/logos/RIOPAK-ENGINEERS-LOGO.webp" alt="RIOPAK Engineers Logo" class="brand-logo-fab">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logos/RIOPAK-ENGINEERS-LOGO.webp" alt="RIOPAK Packaging Technologies Logo" class="brand-logo">
       </a>
-      <nav class="main-nav-fab" id="mainNav" aria-label="Primary navigation">
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
         <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
-          <li><a href="pages/about.html">ABOUT</a></li>
-          <li><a href="pages/products.html">PRODUCTS</a></li>
-          <li><a href="pages/industries.html">INDUSTRIES</a></li>
-          <li><a href="pages/projects.html">PROJECTS</a></li>
-          <li><a href="pages/contact.html">CONTACT</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/products.html">Products</a></li>
+          <li><a href="pages/industries.html">Industries</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-phone-fab">
-        <a href="tel:+919712770961" class="phone-badge-link">
-          <span class="phone-icon-box">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </span>
-          <span class="phone-number-text">+91 97127 70961</span>
-        </a>
+
+      <div class="header-actions">
+        <a href="tel:+919712770961" class="header-phone">+91 97127 70961</a>
+        <a href="#quote-form" class="btn btn-primary header-cta">Contact Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
   <!-- 01 — HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg" style="background-image: url('assets/images/hero/hero-section.png');"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-inner">
-      <!-- Small label -->
-      <span class="hero-label hero-anim" data-hero-delay="0">RIOPAK ENGINEERS</span>
-      <!-- Giant heading -->
-      <h1 class="hero-giant hero-anim" data-hero-delay="1">
-        <span class="hero-giant-line">PACKAGING</span>
-        <span class="hero-giant-line text-accent">ENGINEERED</span>
-      </h1>
-      <!-- Right-side secondary content block -->
-      <div class="hero-secondary hero-anim" data-hero-delay="2">
-        <h2 class="hero-secondary-heading">FOR<br>PERFORMANCE</h2>
-        <p class="hero-secondary-text">Packaging and processing machinery engineered for accurate, efficient and dependable production.</p>
-        <a href="pages/contact.html" class="btn btn-hero-cta">Get a Quote →</a>
-      </div>
-    </div>
-  </section>
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">RIOPAK | Vadodara, Gujarat, India</span>
+        <h1 class="hero-title">Complete Packaging Lines <span>Engineered</span> for Precision</h1>
+        <p class="hero-subline">Precision Engineering. Advanced Automation. Excellence in Packaging.</p>
+        <p class="hero-desc">Innovative automatic VFFS, auger filling, multi-head weighing, and screw feeding machinery designed for accuracy, efficiency, and reliable output.</p>
 
-  <!-- 02 — PROCESS / HOW WE WORK -->
-  <section class="process-section" id="process">
-    <div class="process-container">
-      <div class="process-head-row">
-        <div class="process-head-left">
-          <h2 class="process-heading reveal">FROM <span class="text-accent">PRODUCT REQUIREMENT</span><br>TO PRODUCTION.</h2>
+        <div class="hero-checks">
+          <span class="hero-check-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Precision Engineering
+          </span>
+          <span class="hero-check-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Customer-Focused Excellence
+          </span>
+          <span class="hero-check-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Service Beyond Delivery
+          </span>
         </div>
-        <div class="process-head-right">
-          <p class="process-subtitle reveal delay-1">Every packaging application has different requirements. Riopak approaches each solution around the product, pack format, filling method and production objective.</p>
+
+        <div class="hero-ctas">
+          <a href="#machines" class="btn btn-primary">Explore Machines →</a>
+          <a href="#quote-form" class="btn btn-outline">Share Your Packaging Requirement</a>
         </div>
       </div>
-      <div class="process-grid">
-        <!-- Card 01: Consultation & Project Needs -->
-        <div class="process-card reveal">
-          <div class="process-card-icon">
-            <svg width="40" height="40" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 14a2 2 0 0 1 2-2h8l4 4h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V14z"/>
-            </svg>
-          </div>
-          <div class="process-card-body">
-            <h3>CONSULTATION AND<br>PROJECT NEEDS</h3>
-            <p>Understanding technical specifications, project goals, and production needs.</p>
-          </div>
-        </div>
 
-        <!-- Card 02: Engineering & Designs System -->
-        <div class="process-card reveal delay-1">
-          <div class="process-card-icon">
-            <svg width="40" height="40" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 6L6 14l16 8 16-8-16-8z"/>
-              <path d="M6 22l16 8 16-8"/>
-              <path d="M6 30l16 8 16-8"/>
-            </svg>
-          </div>
-          <div class="process-card-body">
-            <h3>ENGINEERING AND<br>DESIGNS SYSTEM</h3>
-            <p>Advanced engineering and design systems built for precision and performance.</p>
-          </div>
+      <div class="hero-showcase">
+        <div class="hero-media">
+          <img src="assets/images/hero/hero-section.png" alt="RIOPAK Automatic Packaging Machinery">
         </div>
-
-        <!-- Card 03: Production & Quality Control -->
-        <div class="process-card reveal delay-2">
-          <div class="process-card-icon">
-            <svg width="40" height="40" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="8" y="10" width="8" height="8" rx="1"/>
-              <path d="M20 12h16M20 16h16"/>
-              <rect x="8" y="24" width="8" height="8" rx="1"/>
-              <path d="M20 26h16M20 30h16"/>
-            </svg>
+        <div class="hero-caption-bar">
+          <div>
+            <strong>Complete Packaging Solutions</strong>
+            <span>VFFS • Auger Fillers • Multi-Head Weighers • Screw Feeders</span>
           </div>
-          <div class="process-card-body">
-            <h3>PRODUCTION AND<br>QUALITY CONTROL</h3>
-            <p>Enhancing manufacturing efficiency through quality-focused processes.</p>
-          </div>
-        </div>
-
-        <!-- Card 04: Delivery & Customer Support -->
-        <div class="process-card reveal delay-3">
-          <div class="process-card-icon">
-            <svg width="40" height="40" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M38 6L18 24"/>
-              <path d="M38 6L26 38l-8-14-14-8L38 6z"/>
-            </svg>
-          </div>
-          <div class="process-card-body">
-            <h3>DELIVERY AND<br>CUSTOMER SUPPORT</h3>
-            <p>Driving operational excellence through production and quality control.</p>
-          </div>
+          <span class="hero-status-pill">Application-Specific</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 03 — ABOUT / CAPABILITY -->
-  <section class="about-section" id="about">
-    <div class="about-container">
-      <div class="about-grid-fab">
-        <div class="about-media-fab reveal">
-          <img src="assets/images/about/about-main.jpg" alt="RIOPAK manufacturing facility" loading="lazy">
-        </div>
-        <div class="about-content-fab">
-          <h2 class="about-heading reveal">ENGINEERED FOR <span class="text-accent">PRODUCTION.</span><br>BUILT FOR RELIABILITY.</h2>
-          <p class="about-text reveal delay-1">Riopak Engineers designs and manufactures packaging, filling and weighing machinery for a wide range of product and production requirements. Our solutions bring together machine engineering, controlled filling, weighing, sealing and supporting automation in practical production systems.</p>
-          <a href="pages/about.html" class="btn-fab-cta reveal delay-2">
-            EXPLORE CAPABILITIES
-            <span class="btn-fab-arrow">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13L13 5M13 5H6M13 5v7"/></svg>
-            </span>
-          </a>
-          <div class="about-highlights reveal delay-3">
-            <h4 class="highlights-label">HIGHLIGHTS</h4>
-            <ul class="highlights-list">
-              <li>Precision packaging machinery</li>
-              <li>Custom engineering solutions</li>
-              <li>Controlled filling & weighing</li>
-              <li>Ongoing technical support</li>
-            </ul>
-          </div>
-        </div>
+  <!-- 02 — CLIENT TRUST MARQUEE -->
+  <section class="trust-strip" aria-label="Trusted by leading brands">
+    <div class="container">
+      <p class="trust-label">Built on Customer Trust — Quality Engineering &amp; Long-Term Value</p>
+    </div>
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <img src="assets/images/logos/1.webp" alt="ACI Foods Limited">
+        <img src="assets/images/logos/2.webp" alt="Nilon's">
+        <img src="assets/images/logos/3.webp" alt="Square Pharmaceuticals">
+        <img src="assets/images/logos/4.webp" alt="Sun Pharma">
+        <img src="assets/images/logos/5.webp" alt="Tata Salt">
+        <img src="assets/images/logos/1.webp" alt="ACI Foods Limited">
+        <img src="assets/images/logos/2.webp" alt="Nilon's">
+        <img src="assets/images/logos/3.webp" alt="Square Pharmaceuticals">
+        <img src="assets/images/logos/4.webp" alt="Sun Pharma">
+        <img src="assets/images/logos/5.webp" alt="Tata Salt">
+        <img src="assets/images/logos/1.webp" alt="ACI Foods Limited">
+        <img src="assets/images/logos/2.webp" alt="Nilon's">
+        <img src="assets/images/logos/3.webp" alt="Square Pharmaceuticals">
+        <img src="assets/images/logos/4.webp" alt="Sun Pharma">
+        <img src="assets/images/logos/5.webp" alt="Tata Salt">
+      </div>
+      <div class="logo-track" aria-hidden="true">
+        <img src="assets/images/logos/1.webp" alt="ACI Foods Limited">
+        <img src="assets/images/logos/2.webp" alt="Nilon's">
+        <img src="assets/images/logos/3.webp" alt="Square Pharmaceuticals">
+        <img src="assets/images/logos/4.webp" alt="Sun Pharma">
+        <img src="assets/images/logos/5.webp" alt="Tata Salt">
+        <img src="assets/images/logos/1.webp" alt="ACI Foods Limited">
+        <img src="assets/images/logos/2.webp" alt="Nilon's">
+        <img src="assets/images/logos/3.webp" alt="Square Pharmaceuticals">
+        <img src="assets/images/logos/4.webp" alt="Sun Pharma">
+        <img src="assets/images/logos/5.webp" alt="Tata Salt">
+        <img src="assets/images/logos/1.webp" alt="ACI Foods Limited">
+        <img src="assets/images/logos/2.webp" alt="Nilon's">
+        <img src="assets/images/logos/3.webp" alt="Square Pharmaceuticals">
+        <img src="assets/images/logos/4.webp" alt="Sun Pharma">
+        <img src="assets/images/logos/5.webp" alt="Tata Salt">
       </div>
     </div>
   </section>
 
-  <!-- 04 — PRODUCT / SERVICES GRID -->
-  <section class="products-section" id="products">
-    <div class="products-container">
-      <div class="products-head-row">
-        <div class="products-head-left">
-          <h2 class="products-heading reveal">MACHINES FOR THE WAY<br>YOU <span class="text-accent-light">PACKAGE.</span></h2>
-        </div>
-        <div class="products-head-right">
-          <p class="products-subtitle reveal delay-1">Explore Riopak's core machine categories and supporting solutions.</p>
-          <a href="pages/products.html" class="btn-products-all reveal delay-2">VIEW ALL MACHINES →</a>
-        </div>
+  <!-- 03 — WHAT DO YOU WANT TO PACK? -->
+  <section class="section-pad" id="applications">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Application-Specific Solutions</span>
+        <h2 class="section-title">What do you want to pack?</h2>
+        <p class="section-subtitle">Select your product category and RIOPAK helps configure the right VFFS, auger filling, multi-head weighing, or screw feeding system for your production goal.</p>
       </div>
-      <div class="products-grid-fab">
-        <article class="product-card-fab reveal">
-          <div class="product-card-media" style="background-image: url('assets/images/products/VFFS MACHINES.avif');">
-            <div class="product-card-overlay"></div>
-          </div>
-          <div class="product-card-info">
-            <span class="product-num">01</span>
-            <h3>VFFS MACHINES</h3>
-            <p>Vertical form-fill-seal packaging solutions for powder, granule, snack, liquid and other applications.</p>
-            <a href="products/vffs-machines.html" class="product-link">VIEW DETAILS →</a>
+
+      <div class="filter-tabs" role="tablist" aria-label="Filter packaging applications">
+        <button class="filter-tab active" data-filter="all">All Products</button>
+        <button class="filter-tab" data-filter="powders">Spices &amp; Powders</button>
+        <button class="filter-tab" data-filter="snacks">Snacks &amp; Chips</button>
+        <button class="filter-tab" data-filter="grains">Grains &amp; Granules</button>
+        <button class="filter-tab" data-filter="agro">Agro &amp; Industrial</button>
+      </div>
+
+      <div class="pack-grid">
+        <article class="pack-card" data-category="powders">
+          <img class="pack-card-img" src="assets/images/industries/spices.jpg" alt="Spices packaging machinery" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Spices &amp; Seasonings</h3>
+            <p>Auger filling and VFFS systems engineered for accurate dosing and clean sealing of fine spices and ground powders.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Spices &amp; Powders">Configure line →</a>
           </div>
         </article>
 
-        <article class="product-card-fab reveal delay-1">
-          <div class="product-card-media" style="background-image: url('assets/images/products/BOTTLE FILLING.avif');">
-            <div class="product-card-overlay"></div>
-          </div>
-          <div class="product-card-info">
-            <span class="product-num">02</span>
-            <h3>BOTTLE FILLING</h3>
-            <p>Filling solutions for liquid products with configurations based on product and production requirements.</p>
-            <a href="products/bottle-filling.html" class="product-link">VIEW DETAILS →</a>
+        <article class="pack-card" data-category="powders">
+          <img class="pack-card-img" src="assets/images/industries/food.jpg" alt="Flour and atta packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Flour &amp; Atta</h3>
+            <p>Controlled auger dosing and screw feeding designed for consistent pouch weights and dust-managed operation.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Flour &amp; Atta">Configure line →</a>
           </div>
         </article>
 
-        <article class="product-card-fab reveal delay-2">
-          <div class="product-card-media" style="background-image: url('assets/images/products/FILLERS & WEIGHERSA.avif');">
-            <div class="product-card-overlay"></div>
-          </div>
-          <div class="product-card-info">
-            <span class="product-num">03</span>
-            <h3>FILLERS & WEIGHERS</h3>
-            <p>Auger, volumetric, liquid and weighing-based filling solutions for controlled product dosing.</p>
-            <a href="products/fillers-weighers.html" class="product-link">VIEW DETAILS →</a>
+        <article class="pack-card" data-category="snacks">
+          <img class="pack-card-img" src="assets/images/industries/snacks.jpg" alt="Potato chips and extruded snacks packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Potato Chips &amp; Extruded Snacks</h3>
+            <p>High-speed VFFS with multi-head weighing for gentle product handling, minimal breakage, and reliable sealing.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Potato Chips &amp; Extruded Snacks">Configure line →</a>
           </div>
         </article>
 
-        <article class="product-card-fab reveal delay-3">
-          <div class="product-card-media" style="background-image: url('assets/images/products/ACCESSORIES.png');">
-            <div class="product-card-overlay"></div>
-          </div>
-          <div class="product-card-info">
-            <span class="product-num">04</span>
-            <h3>ACCESSORIES</h3>
-            <p>Supporting equipment and packaging-line components to complete the production setup.</p>
-            <a href="products/accessories.html" class="product-link">VIEW DETAILS →</a>
+        <article class="pack-card" data-category="snacks">
+          <img class="pack-card-img" src="assets/images/projects/vffs-machine.jpg" alt="Namkeen and dry fruits packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Namkeen &amp; Dry Fruits</h3>
+            <p>Accurate weighing and flexible pouch formats tailored for namkeen blends, roasted snacks, and dry fruits.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Namkeen &amp; Dry Fruits">Configure line →</a>
           </div>
         </article>
 
-        <article class="product-card-fab reveal delay-4">
-          <div class="product-card-media" style="background-image: url('assets/images/products/SERVICE & SPARES.png');">
-            <div class="product-card-overlay"></div>
+        <article class="pack-card" data-category="grains">
+          <img class="pack-card-img" src="assets/images/industries/food.jpg" alt="Pulses, grains and cereals packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Pulses, Grains &amp; Cereals</h3>
+            <p>Robust VFFS and multi-head weighing systems built for high-accuracy packing of pulses, grains, and cereals.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Pulses, Grains &amp; Cereals">Configure line →</a>
           </div>
-          <div class="product-card-info">
-            <span class="product-num">05</span>
-            <h3>SERVICE & SPARES</h3>
-            <p>Technical assistance, maintenance support and spare parts for continued machine operation.</p>
-            <a href="products/service-spares.html" class="product-link">VIEW DETAILS →</a>
+        </article>
+
+        <article class="pack-card" data-category="grains">
+          <img class="pack-card-img" src="assets/images/products/FILLERS & WEIGHERSA.avif" alt="Salt and granules packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Salt &amp; Granules</h3>
+            <p>Consistent volumetric and weighing performance for salt and free-flowing granular products across pack sizes.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Salt &amp; Granules">Configure line →</a>
+          </div>
+        </article>
+
+        <article class="pack-card" data-category="agro">
+          <img class="pack-card-img" src="assets/images/industries/agro.jpg" alt="Agricultural products packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Agricultural Products</h3>
+            <p>Dependable VFFS and screw feeding machinery built to handle seeds, agro inputs, and agricultural materials.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Agricultural Products">Configure line →</a>
+          </div>
+        </article>
+
+        <article class="pack-card" data-category="agro">
+          <img class="pack-card-img" src="assets/images/projects/custom-packaging-line.jpg" alt="Industrial materials packaging" loading="lazy">
+          <div class="pack-card-body">
+            <h3>Industrial Materials</h3>
+            <p>Customized packaging lines engineered around product flow behavior, pouch dimensions, and factory layout.</p>
+            <a href="#quote-form" class="card-link" data-select-product="Industrial Materials">Configure line →</a>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- 05 — LARGE VISUAL / ENGINEERING STATEMENT -->
-  <section class="statement-banner" id="statement">
-    <div class="statement-overlay-fab"></div>
-    <div class="statement-heading-wrap">
-      <h2 class="statement-giant reveal"><span class="text-accent">PRECISION</span><br>IN EVERY PACK.</h2>
-    </div>
-    <div class="statement-copy-wrap">
-      <p class="statement-copy reveal delay-2">From accurate dosing and weighing to dependable forming, filling and sealing, every machine is designed around consistent production performance.</p>
-    </div>
-  </section>
-
-  <!-- 06 — PROOF / STATISTICS -->
-  <section class="stats-section" id="stats">
-    <div class="stats-container">
-      <p class="stats-label reveal">RIOPAK BY THE NUMBERS</p>
-      <div class="stats-grid">
-        <div class="stat reveal">
-          <span class="stat-number" data-count="15">15<span class="stat-plus">+</span></span>
-          <span class="stat-label">YEARS OF EXPERIENCE</span>
-        </div>
-        <div class="stat reveal delay-1">
-          <span class="stat-number" data-count="500">500<span class="stat-plus">+</span></span>
-          <span class="stat-label">MACHINES / INSTALLATIONS</span>
-        </div>
-        <div class="stat reveal delay-2">
-          <span class="stat-number" data-count="300">300<span class="stat-plus">+</span></span>
-          <span class="stat-label">CUSTOMERS</span>
-        </div>
-        <div class="stat reveal delay-3">
-          <span class="stat-number" data-count="8">8<span class="stat-plus">+</span></span>
-          <span class="stat-label">APPLICATIONS / MARKETS</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 07 — FEATURED PROJECTS / MACHINES -->
-  <section class="projects-section" id="projects">
-    <div class="projects-container">
-      <div class="projects-head-row">
-        <div class="projects-head-left">
-          <p class="projects-tagline reveal">SELECTED WORK</p>
-          <h2 class="projects-heading reveal delay-1">BUILT FOR<br>REAL <span class="text-accent">PRODUCTION.</span></h2>
-        </div>
-        <div class="projects-head-right">
-          <p class="projects-subtitle reveal delay-2">Selected Riopak machines, installations and applications across high-speed packaging, filling and weighing lines.</p>
-        </div>
+  <!-- 04 — COMPREHENSIVE MACHINERY LINEUP -->
+  <section class="section-pad section-soft" id="machines">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Engineering the Future of Packaging</span>
+        <h2 class="section-title">Complete Packaging Machinery Solutions for Every Production Need</h2>
+        <p class="section-subtitle">Based in Vadodara, Gujarat, India, RIOPAK combines practical engineering expertise, advanced automation, and precision manufacturing to streamline your production.</p>
       </div>
 
-      <div class="projects-grid-editorial">
-        <!-- Project 01: Featured Large Card (65% width) -->
-        <article class="project-card-editorial project-col-7 reveal">
-          <a href="pages/projects.html" class="project-card-link">
-            <div class="project-photo-frame">
-              <img src="assets/images/projects/vffs-machine.jpg" alt="High-Speed Automated Packaging Line" loading="lazy">
-            </div>
-            <div class="project-info-row">
-              <div class="project-info-left">
-                <div class="project-meta-tags">
-                  <span class="project-num">01</span>
-                  <span class="project-cat">VFFS PACKAGING MACHINERY</span>
-                </div>
-                <h3 class="project-title">High-Speed Automated Packaging Line</h3>
-                <p class="project-desc">Integrated packaging, weighing and conveying solution designed for high-throughput production.</p>
-              </div>
-              <div class="project-info-right">
-                <span class="project-action-link">VIEW PROJECT <span class="arrow-symbol">↗</span></span>
-              </div>
-            </div>
-          </a>
+      <div class="machines-grid">
+        <article class="machine-card">
+          <img class="machine-card-img" src="assets/images/products/VFFS MACHINES.avif" alt="Vertical Form Fill Seal (VFFS) Machines" loading="lazy">
+          <div class="machine-card-body">
+            <span class="machine-num">01 / VFFS SYSTEMS</span>
+            <h3>Vertical Form Fill Seal (VFFS) Machines</h3>
+            <p>Automatic pouch forming, filling, and sealing engineered for accuracy, productivity, and consistent seal quality across diverse products.</p>
+            <a href="pages/products.html" class="card-link">View details →</a>
+          </div>
         </article>
 
-        <!-- Project 02: Secondary Narrow Card (35% width) -->
-        <article class="project-card-editorial project-col-5 reveal delay-1">
-          <a href="pages/projects.html" class="project-card-link">
-            <div class="project-photo-frame">
-              <img src="assets/images/products/BOTTLE FILLING.avif" alt="Automated Filling & Bottling Line" loading="lazy">
-            </div>
-            <div class="project-info-row">
-              <div class="project-info-left">
-                <div class="project-meta-tags">
-                  <span class="project-num">02</span>
-                  <span class="project-cat">FILLING & BOTTLING</span>
-                </div>
-                <h3 class="project-title">Automated Filling & Bottling Line</h3>
-                <p class="project-desc">Precision filling and conveying systems for high-speed liquid production.</p>
-              </div>
-              <div class="project-info-right">
-                <span class="project-action-link">VIEW PROJECT <span class="arrow-symbol">↗</span></span>
-              </div>
-            </div>
-          </a>
+        <article class="machine-card">
+          <img class="machine-card-img" src="assets/images/products/FILLERS & WEIGHERSA.avif" alt="Auger Filling Machines" loading="lazy">
+          <div class="machine-card-body">
+            <span class="machine-num">02 / POWDER DOSING</span>
+            <h3>Auger Filling Machines</h3>
+            <p>Precision servo-controlled auger fillers designed for spices, flour, and fine powders requiring tight weight consistency.</p>
+            <a href="pages/products.html" class="card-link">View details →</a>
+          </div>
         </article>
 
-        <!-- Project 03: Secondary Narrow Card (35% width) -->
-        <article class="project-card-editorial project-col-5 reveal delay-2">
-          <a href="pages/projects.html" class="project-card-link">
-            <div class="project-photo-frame">
-              <img src="assets/images/products/FILLERS & WEIGHERSA.avif" alt="Multi-Head Weighing Integration" loading="lazy">
-            </div>
-            <div class="project-info-row">
-              <div class="project-info-left">
-                <div class="project-meta-tags">
-                  <span class="project-num">03</span>
-                  <span class="project-cat">WEIGHING SYSTEMS</span>
-                </div>
-                <h3 class="project-title">Multi-Head Weighing Integration</h3>
-                <p class="project-desc">Accurate automated dosing, weighing and product handling.</p>
-              </div>
-              <div class="project-info-right">
-                <span class="project-action-link">VIEW PROJECT <span class="arrow-symbol">↗</span></span>
-              </div>
-            </div>
-          </a>
+        <article class="machine-card">
+          <img class="machine-card-img" src="assets/images/projects/weighing-system.jpg" alt="Multi-Head Weighing Systems" loading="lazy">
+          <div class="machine-card-body">
+            <span class="machine-num">03 / HIGH-SPEED WEIGHING</span>
+            <h3>Multi-Head Weighing Systems</h3>
+            <p>Integrated multi-head weighers for potato chips, extruded snacks, namkeen, dry fruits, pulses, grains, and granules.</p>
+            <a href="pages/products.html" class="card-link">View details →</a>
+          </div>
         </article>
 
-        <!-- Project 04: Featured Large Card (65% width) -->
-        <article class="project-card-editorial project-col-7 reveal delay-3">
-          <a href="pages/projects.html" class="project-card-link">
-            <div class="project-photo-frame">
-              <img src="assets/images/projects/custom-packaging-line.jpg" alt="Industrial Conveyor Integration" loading="lazy">
-            </div>
-            <div class="project-info-row">
-              <div class="project-info-left">
-                <div class="project-meta-tags">
-                  <span class="project-num">04</span>
-                  <span class="project-cat">CONVEYING SYSTEMS</span>
-                </div>
-                <h3 class="project-title">Industrial Conveyor Integration</h3>
-                <p class="project-desc">Reliable material movement engineered around production requirements.</p>
-              </div>
-              <div class="project-info-right">
-                <span class="project-action-link">VIEW PROJECT <span class="arrow-symbol">↗</span></span>
-              </div>
-            </div>
-          </a>
+        <article class="machine-card">
+          <img class="machine-card-img" src="assets/images/products/ACCESSORIES.jpg" alt="Screw Feeding Systems" loading="lazy">
+          <div class="machine-card-body">
+            <span class="machine-num">04 / MATERIAL HANDLING</span>
+            <h3>Screw Feeding Systems</h3>
+            <p>Reliable screw feeding and conveying systems engineered for smooth, continuous product transfer into filling and VFFS lines.</p>
+            <a href="pages/products.html" class="card-link">View details →</a>
+          </div>
+        </article>
+
+        <article class="machine-card">
+          <img class="machine-card-img" src="assets/images/projects/custom-packaging-line.jpg" alt="Customized Packaging Lines" loading="lazy">
+          <div class="machine-card-body">
+            <span class="machine-num">05 / TURNKEY INTEGRATION</span>
+            <h3>Customized Packaging Lines</h3>
+            <p>Tailored end-to-end packaging lines configured around your product characteristics, pouch format, capacity, and factory layout.</p>
+            <a href="pages/products.html" class="card-link">Explore all systems →</a>
+          </div>
+        </article>
+
+        <article class="machine-card">
+          <img class="machine-card-img" src="assets/images/products/SERVICE_SPARES.jpg" alt="Service Beyond Delivery" loading="lazy">
+          <div class="machine-card-body">
+            <span class="machine-num">06 / LIFECYCLE SUPPORT</span>
+            <h3>Service Beyond Delivery</h3>
+            <p>Expert installation, commissioning, operator training, and responsive after-sales support to minimize downtime and maximize output.</p>
+            <a href="pages/products.html" class="card-link">Support &amp; spares →</a>
+          </div>
         </article>
       </div>
-
-      <div class="projects-cta-wrap reveal delay-4">
-        <a href="pages/projects.html" class="btn-projects-cta">
-          VIEW ALL PROJECTS
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13L13 5M13 5H6M13 5v7"/></svg>
-        </a>
-      </div>
     </div>
   </section>
 
-  <!-- 08 — INDUSTRIES -->
-  <section class="industries-section" id="industries">
-    <div class="industries-container">
-      <div class="industries-head-row">
-        <div class="industries-head-left">
-          <p class="industries-tagline reveal">WHERE WE WORK</p>
-          <h2 class="industries-heading reveal delay-1">PACKAGING SOLUTIONS<br>ACROSS <span class="text-accent">INDUSTRIES.</span></h2>
-        </div>
-        <div class="industries-head-right">
-          <p class="industries-subtitle reveal delay-2">Riopak machinery adapts to different product characteristics, container formats, dosing methods and speed objectives.</p>
-        </div>
+  <!-- 05 — OUR COMMITMENT -->
+  <section class="section-pad">
+    <div class="container split-grid">
+      <div class="split-media">
+        <img src="assets/images/about/about-main.jpg" alt="RIOPAK precision-driven engineering" loading="lazy">
       </div>
-
-      <div class="industries-list-wrap">
-        <div class="industries-list">
-          <div class="industry-row reveal" data-img="assets/images/industries/food.jpg" data-title="FOOD & BEVERAGE PACKAGING" data-desc="High-precision dosing and filling systems for powders, granules, liquids, sauces and processed food production lines.">
-            <div class="ind-left">
-              <span class="ind-num">01</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">FOOD & BEVERAGE</h3>
-                <p class="ind-subtext">Powders, granules, liquids, sauces and processed food packaging systems.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/food.jpg" alt="Food & Beverage" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <div>
+        <span class="eyebrow">Our Commitment</span>
+        <h2 class="section-title">RIOPAK – Engineered for Performance. Built for Reliability.</h2>
+        <p class="section-subtitle">Our vision is to make packaging operations smarter, more efficient, and more reliable through continuous engineering improvement and customer-focused solutions.</p>
+        <div class="commitment-list">
+          <div class="commitment-item">
+            <span class="commitment-dot"></span>
+            <div>
+              <h4>Precision</h4>
+              <p>Accurate filling and consistent packaging performance.</p>
             </div>
           </div>
-
-          <div class="industry-row reveal delay-1" data-img="assets/images/industries/agro.jpg" data-title="AGRO PRODUCTS & SEED DOSING" data-desc="Robust filling and packaging solutions for seeds, grains, agro-chemicals and specialized fertilizer dosing.">
-            <div class="ind-left">
-              <span class="ind-num">02</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">AGRO PRODUCTS</h3>
-                <p class="ind-subtext">Seeds, grains, agro-chemicals and fertilizer dosing solutions.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/agro.jpg" alt="Agro Products" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="commitment-item">
+            <span class="commitment-dot"></span>
+            <div>
+              <h4>Innovation</h4>
+              <p>Modern automation and intelligent machine engineering.</p>
             </div>
           </div>
-
-          <div class="industry-row reveal delay-2" data-img="assets/images/industries/spices.jpg" data-title="SPICE & POWDER PACKAGING" data-desc="Dust-controlled auger and volumetric fillers engineered for fine spices, seasonings and ground powders.">
-            <div class="ind-left">
-              <span class="ind-num">03</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">SPICES & SEASONINGS</h3>
-                <p class="ind-subtext">Auger and volumetric filling for fine spices and ground powders.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/spices.jpg" alt="Spices & Seasonings" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="commitment-item">
+            <span class="commitment-dot"></span>
+            <div>
+              <h4>Reliability</h4>
+              <p>Robust machine construction for dependable operation.</p>
             </div>
           </div>
-
-          <div class="industry-row reveal delay-3" data-img="assets/images/industries/snacks.jpg" data-title="SNACK & CONFECTIONERY LINES" data-desc="High-speed VFFS machines paired with multi-head weighers for fragile snacks, chips and candies.">
-            <div class="ind-left">
-              <span class="ind-num">04</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">SNACKS & CONFECTIONERY</h3>
-                <p class="ind-subtext">High-speed VFFS and multi-head weighing for snacks, chips and candies.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/snacks.jpg" alt="Snacks & Confectionery" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="commitment-item">
+            <span class="commitment-dot"></span>
+            <div>
+              <h4>Flexibility</h4>
+              <p>Customized solutions for different products and packaging formats.</p>
             </div>
           </div>
-
-          <div class="industry-row reveal" data-img="assets/images/industries/pharma.jpg" data-title="PHARMACEUTICAL PACKAGING" data-desc="Hygienic liquid filling, tablet counting and cleanroom-compliant automated packaging machinery.">
-            <div class="ind-left">
-              <span class="ind-num">05</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">PHARMACEUTICALS</h3>
-                <p class="ind-subtext">Controlled liquid filling, tablet counting and hygienic packaging lines.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/pharma.jpg" alt="Pharmaceuticals" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-
-          <div class="industry-row reveal delay-1" data-img="assets/images/industries/cosmetics.jpg" data-title="COSMETIC & BOTTLING SOLUTIONS" data-desc="Precision dosing and capping for viscous liquids, creams, lotions and personal care containers.">
-            <div class="ind-left">
-              <span class="ind-num">06</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">COSMETICS & PERSONAL CARE</h3>
-                <p class="ind-subtext">Viscous liquid, lotion and personal care product bottling.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/cosmetics.jpg" alt="Cosmetics & Personal Care" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-
-          <div class="industry-row reveal delay-2" data-img="assets/images/industries/detergents.jpg" data-title="DETERGENT & CHEMICAL BOTTLING" data-desc="Corrosion-resistant filling lines for household detergents, liquid soaps and chemical cleaning liquids.">
-            <div class="ind-left">
-              <span class="ind-num">07</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">DETERGENTS & WASHING LIQUIDS</h3>
-                <p class="ind-subtext">Corrosive liquid and chemical detergent bottle filling.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/detergents.jpg" alt="Detergents & Washing Liquids" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-
-          <div class="industry-row reveal delay-3" data-img="assets/images/industries/chemicals.jpg" data-title="INDUSTRIAL CHEMICAL DOSING" data-desc="Heavy-duty bulk powder and liquid dosing systems built for safety, durability and high performance.">
-            <div class="ind-left">
-              <span class="ind-num">08</span>
-              <div class="ind-text-col">
-                <h3 class="ind-name">CHEMICALS & FERTILIZERS</h3>
-                <p class="ind-subtext">Bulk powder and liquid chemical dosing systems.</p>
-              </div>
-            </div>
-            <div class="ind-mobile-img"><img src="assets/images/industries/chemicals.jpg" alt="Chemicals & Fertilizers" loading="lazy"></div>
-            <div class="ind-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sticky Editorial Showcase Card on Desktop (Matches Reference Image) -->
-        <div class="industry-card-floating">
-          <div class="industry-card-inner">
-            <div class="industry-card-media">
-              <img src="assets/images/industries/food.jpg" alt="Industry preview" id="indPreviewImg">
-            </div>
-            <div class="industry-card-body">
-              <h4 class="ind-card-title" id="indCardTitle">FOOD & BEVERAGE PACKAGING</h4>
-              <p class="ind-card-desc" id="indCardDesc">High-precision dosing and filling systems for powders, granules, liquids, sauces and processed food production lines.</p>
+          <div class="commitment-item">
+            <span class="commitment-dot"></span>
+            <div>
+              <h4>Customer Support</h4>
+              <p>Dedicated assistance from installation to ongoing service.</p>
             </div>
           </div>
         </div>
@@ -537,227 +347,229 @@
     </div>
   </section>
 
-  <!-- 09 — WHY RIOPAK / ADVANTAGE -->
-  <section class="why-section" id="advantage">
-    <div class="why-container">
-      <div class="why-head-row">
-        <div class="why-head-left">
-          <p class="why-tagline reveal">THE RIOPAK ADVANTAGE</p>
-          <h2 class="why-heading reveal delay-1">MORE THAN A <span class="text-accent-light">MACHINE.</span></h2>
+  <!-- 06 — PROOF & PERFORMANCE STATS STRIP -->
+  <section class="stats-strip" id="stats" aria-label="RIOPAK by the numbers">
+    <div class="container">
+      <div class="stats-strip-inner">
+        <div class="strip-item">
+          <div class="strip-num">7<span class="strip-accent">Year+</span></div>
+          <div class="strip-label">Industry Experience</div>
         </div>
-      </div>
-
-      <div class="why-list">
-        <div class="why-row reveal">
-          <div class="why-row-left">
-            <span class="why-num">01</span>
-            <h3 class="why-title">PRECISION</h3>
-          </div>
-          <div class="why-row-right">
-            <p class="why-desc">Controlled filling and weighing for consistent production.</p>
-          </div>
+        <div class="strip-item">
+          <div class="strip-num">80<span class="strip-accent">+</span></div>
+          <div class="strip-label">Machines Installed</div>
         </div>
-
-        <div class="why-row reveal delay-1">
-          <div class="why-row-left">
-            <span class="why-num">02</span>
-            <h3 class="why-title">RELIABILITY</h3>
-          </div>
-          <div class="why-row-right">
-            <p class="why-desc">Industrial machine construction designed for demanding environments.</p>
-          </div>
+        <div class="strip-item">
+          <div class="strip-num">60<span class="strip-accent">+</span></div>
+          <div class="strip-label">Satisfied Customers</div>
         </div>
-
-        <div class="why-row reveal delay-2">
-          <div class="why-row-left">
-            <span class="why-num">03</span>
-            <h3 class="why-title">FLEXIBILITY</h3>
-          </div>
-          <div class="why-row-right">
-            <p class="why-desc">Configurations suited to different products, pack formats and production needs.</p>
-          </div>
-        </div>
-
-        <div class="why-row reveal delay-3">
-          <div class="why-row-left">
-            <span class="why-num">04</span>
-            <h3 class="why-title">CONTROL</h3>
-          </div>
-          <div class="why-row-right">
-            <p class="why-desc">PLC and HMI-based operation for practical machine management.</p>
-          </div>
-        </div>
-
-        <div class="why-row reveal delay-4">
-          <div class="why-row-left">
-            <span class="why-num">05</span>
-            <h3 class="why-title">SUPPORT</h3>
-          </div>
-          <div class="why-row-right">
-            <p class="why-desc">Technical service and spares support for ongoing operation.</p>
-          </div>
+        <div class="strip-item">
+          <div class="strip-num">10<span class="strip-accent">+</span></div>
+          <div class="strip-label">Product Applications</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 10 — CINEMATIC MACHINE / VIDEO SECTION -->
-  <section class="video-banner" id="cinematic-banner">
-    <video class="video-bg-media" autoplay loop muted playsinline preload="auto">
-      <source src="assets/videos/ENGINEERING THAT KEEPS PRODUCTION MOVING.mp4" type="video/mp4">
-    </video>
-    <div class="video-overlay-fab"></div>
-    <div class="video-container">
-      <h2 class="video-giant reveal">ENGINEERING THAT<br>KEEPS PRODUCTION <span class="text-accent-light">MOVING.</span></h2>
-      <a href="pages/about.html" class="btn-fab-cta reveal delay-2">
-        EXPLORE OUR CAPABILITIES
-        <span class="btn-fab-arrow">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13L13 5M13 5H6M13 5v7"/></svg>
-        </span>
-      </a>
-    </div>
-  </section>
-
-  <!-- 11 — CUSTOMER EXPERIENCE & TRUST -->
-  <section class="testimonial-section" id="experience">
-    <div class="testimonial-container">
-      <!-- TOP TITLE ROW (MATCHES FABRECOR REFERENCE EXACTLY) -->
-      <div class="exp-head-row">
-        <div class="exp-head-left">
-          <p class="testimonial-tagline reveal">CUSTOMER EXPERIENCE</p>
-          <h2 class="testimonial-heading reveal delay-1">BUILT AROUND<br>CUSTOMER <span class="text-accent">REQUIREMENTS.</span></h2>
-        </div>
-        <div class="exp-head-right">
-          <p class="exp-philosophy-text reveal delay-2">Every machine and line configuration is engineered around the specific product characteristics, speed objectives and operational needs of our customers.</p>
-        </div>
+  <!-- 07 — 5-STEP PROCESS -->
+  <section class="section-pad section-soft">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Customer-Centric Packaging Solutions</span>
+        <h2 class="section-title">Not just a machine. A complete packaging journey.</h2>
+        <p class="section-subtitle">We develop solutions based on individual product characteristics, pouch dimensions, filling systems, production capacity, and factory requirements.</p>
       </div>
-
-      <!-- SUBTLE HORIZONTAL DIVIDER -->
-      <hr class="exp-divider reveal delay-3">
-
-      <!-- BOTTOM TRUST & LOGO ROW -->
-      <div class="exp-trust-section">
-        <div class="exp-trust-head reveal">
-          <p class="testimonial-tagline tagline-center">TRUSTED BY INDUSTRY</p>
-          <h3 class="exp-trust-title title-center">THE CONFIDENCE OF <span class="text-accent">HUNDREDS OF ORGANIZATIONS.</span></h3>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <h3>Product &amp; Requirement Study</h3>
+          <p>Analyze product flow, pouch dimensions, filling method, and target output.</p>
         </div>
-        
-        <div class="exp-logo-row logo-row-center reveal delay-1">
-          <div class="logo-item"><img src="assets/images/logos/1.webp" alt="Client Logo 1" loading="lazy"></div>
-          <div class="logo-item"><img src="assets/images/logos/2.webp" alt="Client Logo 2" loading="lazy"></div>
-          <div class="logo-item"><img src="assets/images/logos/3.webp" alt="Client Logo 3" loading="lazy"></div>
-          <div class="logo-item"><img src="assets/images/logos/4.webp" alt="Client Logo 4" loading="lazy"></div>
-          <div class="logo-item"><img src="assets/images/logos/5.webp" alt="Client Logo 5" loading="lazy"></div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <h3>Concept &amp; Engineering</h3>
+          <p>Design practical, flexible machinery aligned to your factory layout.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <h3>Precision Manufacturing</h3>
+          <p>Build with quality components, standardized processes, and safety focus.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">04</span>
+          <h3>Testing &amp; Validation</h3>
+          <p>Verify fill accuracy, seal quality, and consistent packaging performance.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">05</span>
+          <h3>Installation &amp; Support</h3>
+          <p>On-site commissioning, operator training, and responsive after-sales service.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 12 — FINAL CTA -->
-  <section class="cta-banner" id="final-cta">
-    <div class="cta-overlay-fab"></div>
-    <div class="cta-container">
-      <div class="cta-grid-fab">
-        <div class="cta-head-left">
-          <h2 class="cta-giant reveal">READY TO BUILD<br>A BETTER <span class="text-accent-light">PACKAGING LINE?</span></h2>
-        </div>
-        <div class="cta-content-right">
-          <p class="cta-copy reveal delay-1">Tell us what you need to fill, weigh, seal or package. Our team can help identify the right Riopak solution for your production requirements.</p>
-          <div class="cta-actions-fab reveal delay-2">
-            <a href="pages/contact.html" class="btn-fab-cta">
-              GET A QUOTE
-              <span class="btn-fab-arrow">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13L13 5M13 5H6M13 5v7"/></svg>
-              </span>
-            </a>
-            <a href="pages/contact.html" class="btn-secondary-link">
-              CONTACT OUR TEAM →
-            </a>
+  <!-- 07 — SEE THE LINE IN MOTION & WHY RIOPAK -->
+  <section class="section-pad">
+    <div class="container split-grid">
+      <div>
+        <span class="eyebrow">Why RIOPAK</span>
+        <h2 class="section-title">Engineering That Delivers More</h2>
+        <p class="section-subtitle" style="margin-bottom: 24px;">Leadership driven by packaging engineering expertise, modern manufacturing infrastructure, and honest, transparent business practices.</p>
+        <div class="why-grid">
+          <div class="why-card">
+            <h4>Integrity &amp; Commitment</h4>
+            <p>Honest commitments, transparent practices, and quality without compromise.</p>
+          </div>
+          <div class="why-card">
+            <h4>Innovation-Driven Solutions</h4>
+            <p>Integrated packaging solutions delivered through one trusted partner.</p>
+          </div>
+          <div class="why-card">
+            <h4>Proven Performance</h4>
+            <p>Reliable machinery backed by engineering expertise and dependable support.</p>
+          </div>
+          <div class="why-card">
+            <h4>Modern Infrastructure</h4>
+            <p>Skilled engineers, modern technology, and standardized quality processes.</p>
           </div>
         </div>
+      </div>
+
+      <div class="video-box">
+        <video autoplay muted loop playsinline controls poster="assets/images/projects/vffs-machine.jpg">
+          <source src="assets/videos/ENGINEERING THAT KEEPS PRODUCTION MOVING.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </section>
 
-  <!-- 13 — FOOTER -->
-  <footer class="site-footer" id="footer">
-    <div class="footer-container">
-      <!-- Footer Main Content Grid -->
-      <div class="footer-top-grid">
-        <!-- Brand & Contact Card -->
-        <div class="footer-brand-col reveal">
-          <div class="footer-logo-badge">
-            <img src="assets/logos/RIOPAK-ENGINEERS-LOGO.webp" alt="RIOPAK Engineers Logo" class="footer-brand-logo">
-          </div>
-          <p class="footer-brand-desc">Designing and manufacturing high-precision packaging, filling and weighing machinery for global production lines.</p>
-          <div class="footer-direct-contact">
-            <a href="tel:+919712770961" class="footer-contact-badge">
-              <span class="badge-icon">📞</span>
-              +91 97127 70961
-            </a>
-            <a href="mailto:info@riopak.com" class="footer-contact-badge">
-              <span class="badge-icon">✉️</span>
-              info@riopak.com
-            </a>
-          </div>
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="footer-col-fab reveal delay-1">
-          <h4 class="footer-col-title">NAVIGATION</h4>
-          <nav aria-label="Footer navigation">
-            <ul class="footer-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pages/about.html">About Us</a></li>
-              <li><a href="pages/products.html">Products</a></li>
-              <li><a href="pages/industries.html">Industries</a></li>
-              <li><a href="pages/projects.html">Projects</a></li>
-              <li><a href="pages/contact.html">Contact Us</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- Products Links -->
-        <div class="footer-col-fab reveal delay-2">
-          <h4 class="footer-col-title">MACHINES</h4>
-          <ul class="footer-links">
-            <li><a href="products/vffs-machines.html">VFFS Machines</a></li>
-            <li><a href="products/bottle-filling.html">Bottle Filling Lines</a></li>
-            <li><a href="products/fillers-weighers.html">Fillers & Weighers</a></li>
-            <li><a href="products/accessories.html">Packaging Accessories</a></li>
-            <li><a href="products/service-spares.html">Service & Spares</a></li>
+  <!-- 08 — INLINE TECHNICAL QUOTE FORM -->
+  <section class="section-pad" id="quote-form" style="padding-top: 20px;">
+    <div class="container">
+      <div class="quote-wrapper">
+        <div class="quote-info">
+          <span class="eyebrow" style="background: rgba(232, 80, 26, 0.2); color: #ff8a65; border-color: rgba(232, 80, 26, 0.35);">Start Your Project</span>
+          <h2>Ready to Upgrade Your Packaging Operations?</h2>
+          <p>Tell us about your product, packaging requirements and production goals. RIOPAK will engineer the right packaging solution to improve your productivity, precision and performance.</p>
+          <ul class="quote-bullets">
+            <li>Application-led VFFS, Auger &amp; Multi-Head selection</li>
+            <li>Tailored to your pouch size and production capacity</li>
+            <li>Installation, commissioning &amp; operator training</li>
+            <li>Direct engineering support from Vadodara, Gujarat</li>
           </ul>
         </div>
 
-        <!-- Address Column -->
-        <div class="footer-col-fab reveal delay-3">
-          <h4 class="footer-col-title">HEADQUARTERS</h4>
-          <address class="footer-contact-block">
-            <p class="footer-address">
-              <strong>RIOPAK ENGINEERS</strong><br>
-              51 - OM VILLA, Opp. SSV-2 English Medium School,<br>
-              Dabhoi Ring Road, Vadodara - 390025,<br>
-              Gujarat, India.
-            </p>
-            <div class="footer-emails">
-              <a href="mailto:info@riopak.com" class="footer-email-link">info@riopak.com</a>
-              <a href="mailto:sales@riopak.com" class="footer-email-link">sales@riopak.com</a>
-            </div>
-          </address>
+        <form class="quote-form" id="riopakQuoteForm">
+          <div class="form-group">
+            <label for="leadName">Name *</label>
+            <input type="text" id="leadName" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="leadCompany">Company</label>
+            <input type="text" id="leadCompany" name="company" placeholder="Company name">
+          </div>
+          <div class="form-group">
+            <label for="leadPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="leadPhone" name="phone" placeholder="+91 98XXX XXXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="leadEmail">Email *</label>
+            <input type="email" id="leadEmail" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="productToPack">Product to be Packed *</label>
+            <select id="productToPack" name="product" required>
+              <option value="">Select product category</option>
+              <option value="Spices &amp; Powders">Spices &amp; Ground Powders</option>
+              <option value="Flour &amp; Atta">Flour &amp; Atta</option>
+              <option value="Potato Chips &amp; Extruded Snacks">Potato Chips &amp; Extruded Snacks</option>
+              <option value="Namkeen &amp; Dry Fruits">Namkeen &amp; Dry Fruits</option>
+              <option value="Pulses, Grains &amp; Cereals">Pulses, Grains &amp; Cereals</option>
+              <option value="Salt &amp; Granules">Salt &amp; Granules</option>
+              <option value="Agricultural Products">Agricultural Products</option>
+              <option value="Industrial Materials">Industrial Materials</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="packSize">Pack Size / Weight</label>
+            <input type="text" id="packSize" name="packSize" placeholder="e.g. 50g, 200g, 1kg">
+          </div>
+          <div class="form-group">
+            <label for="expectedOutput">Expected Output</label>
+            <input type="text" id="expectedOutput" name="output" placeholder="e.g. 40–60 pouches/min">
+          </div>
+          <div class="form-group">
+            <label for="setupType">Setup Type</label>
+            <select id="setupType" name="setup">
+              <option value="New Setup">New Setup</option>
+              <option value="Existing Line Upgrade">Existing Line Upgrade</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="leadMessage">Location &amp; Additional Notes</label>
+            <textarea id="leadMessage" name="message" rows="3" placeholder="City/State and any pouch format or factory requirements..."></textarea>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry →</button>
+          </div>
+          <div class="form-status" id="formStatus" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/logos/RIOPAK-ENGINEERS-LOGO.webp" alt="RIOPAK Packaging Technologies">
+          </div>
+          <p style="font-size: 0.9rem; margin: 0 0 12px;">RIOPAK | Packaging Technologies — Delivering advanced, reliable and application-specific packaging machinery from Vadodara, Gujarat, India.</p>
+          <p style="font-size: 0.88rem; margin: 0;"><a href="tel:+919712770961">+91 97127 70961</a></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/industries.html">Industries</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Packaging Machinery</h4>
+          <ul>
+            <li><a href="pages/products.html">VFFS Machines</a></li>
+            <li><a href="pages/products.html">Auger Filling Machines</a></li>
+            <li><a href="pages/products.html">Multi-Head Weighing Systems</a></li>
+            <li><a href="pages/products.html">Screw Feeding Systems</a></li>
+            <li><a href="pages/products.html">Customized Packaging Lines</a></li>
+            <li><a href="pages/products.html">Service &amp; Spares</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Headquarters</h4>
+          <p style="font-size: 0.88rem; margin: 0 0 10px;">RIOPAK | Packaging Technologies<br>51 - OM VILLA, Opp. SSV-2 English Medium School, Dabhoi Ring Road, Vadodara - 390025, Gujarat, India.</p>
+          <p style="font-size: 0.88rem; margin: 0 0 6px;"><a href="mailto:info@riopack.com">info@riopack.com</a></p>
+          <p style="font-size: 0.88rem; margin: 0;"><a href="mailto:sales@riopack.com">sales@riopack.com</a></p>
         </div>
       </div>
 
-      <!-- Bottom Legal Bar -->
-      <div class="footer-bottom-fab">
-        <p class="copyright-text">&copy; <span id="year"></span> RIOPAK ENGINEERS. ALL RIGHTS RESERVED.</p>
-        <p class="footer-credit">Designed & Developed by <a href="https://technomantra.in/" target="_blank" rel="noopener noreferrer" class="technomantra-link">Technomantra</a></p>
+      <div class="footer-bottom">
+        <span>© 2026 RIOPAK | Packaging Technologies. All rights reserved.</span>
+        <span>Designed &amp; Developed by TechnoMantra</span>
       </div>
     </div>
   </footer>
 
-  <script src="js/navigation.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/smooth-scroll.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/home-catalis.js"></script>
 </body>
 </html>

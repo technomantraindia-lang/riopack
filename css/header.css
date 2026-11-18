@@ -1,0 +1,218 @@
+/* ==========================================================================
+   RIOPAK | Packaging Technologies — Universal Full-Width Sticky Header
+   ========================================================================== */
+
+.site-header {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  z-index: 1000 !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.site-header .header-inner,
+.site-header .container.header-inner,
+.site-header .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 74px !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 clamp(20px, 3.5vw, 48px) !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Brand Link & Logo */
+.brand-link,
+.brand-fab {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.brand-logo,
+.brand-logo-fab {
+  height: 44px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Center Navigation */
+.main-nav,
+.main-nav-fab {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.main-nav ul,
+.main-nav-fab ul {
+  list-style: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(16px, 2.2vw, 32px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.main-nav li,
+.main-nav-fab li {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.main-nav a,
+.main-nav-fab a {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 0.94rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #475569 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: color 0.2s ease !important;
+  padding: 6px 0 !important;
+}
+
+.main-nav a:hover,
+.main-nav-fab a:hover,
+.main-nav a.active,
+.main-nav-fab a.active {
+  color: #e8501a !important;
+}
+
+/* Header Actions: Phone + CTA Button */
+.header-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(14px, 1.8vw, 24px) !important;
+  flex-shrink: 0 !important;
+}
+
+.header-phone {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: color 0.2s ease !important;
+}
+
+.header-phone:hover {
+  color: #e8501a !important;
+}
+
+.header-cta,
+.btn-primary.header-cta {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 22px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  white-space: nowrap !important;
+  background: #e8501a !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border: 1px solid transparent !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  box-shadow: none !important;
+}
+
+.header-cta:hover,
+.btn-primary.header-cta:hover {
+  background: #cf4211 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(232, 80, 26, 0.26) !important;
+}
+
+/* Mobile Hamburger Toggle */
+.nav-toggle {
+  display: none !important;
+  background: none !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  cursor: pointer !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+}
+
+.nav-toggle span {
+  display: block !important;
+  width: 22px !important;
+  height: 2px !important;
+  background: #0f172a !important;
+  border-radius: 2px !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Responsive Rules */
+@media (max-width: 960px) {
+  .header-phone {
+    display: none !important;
+  }
+  .main-nav,
+  .main-nav-fab {
+    display: none !important;
+    position: absolute !important;
+    top: 74px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08) !important;
+    padding: 20px 24px !important;
+    justify-content: flex-start !important;
+  }
+  .main-nav.open,
+  .main-nav-fab.open {
+    display: flex !important;
+  }
+  .main-nav ul,
+  .main-nav-fab ul {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  .main-nav a,
+  .main-nav-fab a {
+    font-size: 1rem !important;
+  }
+  .nav-toggle {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-cta,
+  .btn-primary.header-cta {
+    display: none !important;
+  }
+}

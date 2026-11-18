@@ -1,0 +1,763 @@
+/* ==========================================================================
+   RIOPAK | Packaging Technologies — About Page Styling
+   Catalis Packaging-Inspired Industrial B2B Aesthetic
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Scroll Reveal Animations
+   -------------------------------------------------------------------------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-reveal-delay="1"] { transition-delay: 0.08s; }
+[data-reveal-delay="2"] { transition-delay: 0.16s; }
+[data-reveal-delay="3"] { transition-delay: 0.24s; }
+[data-reveal-delay="4"] { transition-delay: 0.32s; }
+[data-reveal-delay="5"] { transition-delay: 0.4s; }
+
+/* --------------------------------------------------------------------------
+   About Hero Section
+   -------------------------------------------------------------------------- */
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+.about-hero-media {
+  position: relative;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+.about-hero-media-inner {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--dark);
+}
+.about-hero-media-inner img {
+  width: 100%;
+  height: clamp(320px, 36vw, 440px);
+  object-fit: cover;
+  display: block;
+}
+.floating-hero-badge {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  background: rgba(11, 17, 32, 0.94);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  max-width: 320px;
+}
+.floating-badge-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.floating-badge-content strong {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+}
+.floating-badge-content span {
+  display: block;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Section 3: Who We Are & Editorial Scope
+   -------------------------------------------------------------------------- */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 52px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.editorial-lead {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+.editorial-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.editorial-media-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+}
+.editorial-media-img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  display: block;
+}
+.editorial-card-highlights {
+  list-style: none;
+  padding: 0 6px 4px;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.editorial-card-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.editorial-card-highlights svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.scope-bar {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-sm);
+}
+.scope-bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.scope-bar-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.scope-bar-tag {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 80, 26, 0.18);
+}
+.scope-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.scope-pill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+.scope-pill-item:hover {
+  border-color: var(--accent);
+  background: #ffffff;
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+.scope-pill-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.applications-tags-box {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--border);
+}
+.applications-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+.applications-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.app-tag {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 14px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.app-tag:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+/* --------------------------------------------------------------------------
+   Section 4: Our Mission & Vision (Full-Width Dark #0b1120)
+   -------------------------------------------------------------------------- */
+.section-dark {
+  background: var(--dark);
+  color: #cbd5e1;
+  padding: 88px 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.section-dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(232, 80, 26, 0.09) 0%, transparent 45%),
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px;
+  pointer-events: none;
+}
+.text-white { color: #ffffff !important; }
+.text-slate-300 { color: #cbd5e1 !important; }
+.eyebrow-dark {
+  background: rgba(232, 80, 26, 0.16) !important;
+  color: #ff7844 !important;
+  border-color: rgba(232, 80, 26, 0.32) !important;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 36px;
+  position: relative;
+  z-index: 1;
+}
+.mv-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 38px 34px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.mv-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(232, 80, 26, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+}
+.mv-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.mv-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(232, 80, 26, 0.14);
+  border: 1px solid rgba(232, 80, 26, 0.32);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mv-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mv-card h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.mv-statement {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #e2e8f0;
+  font-style: italic;
+  margin: 0 0 24px;
+  flex: 1;
+}
+.mv-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+.mv-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+}
+.mv-checklist li svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.tagline-banner {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(232, 80, 26, 0.16) 0%, rgba(232, 80, 26, 0.05) 100%);
+  border: 1px solid rgba(232, 80, 26, 0.35);
+  border-radius: var(--radius-md);
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.tagline-content h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+.tagline-content h4 span {
+  color: var(--accent);
+}
+.tagline-content p {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+.tagline-actions .btn {
+  padding: 11px 22px;
+  font-size: 0.88rem;
+}
+
+/* --------------------------------------------------------------------------
+   Section 5: Our Commitment (5-Card Grid on #f8fafc)
+   -------------------------------------------------------------------------- */
+.commitment-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.commit-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.commit-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+.commit-card-num {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.commit-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.commit-card h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.commit-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Section 6: Engineering Pillars & Customer-Centric Approach (2x2 Bento)
+   -------------------------------------------------------------------------- */
+.pillars-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.pillar-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.pillar-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.pillar-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.pillar-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 80, 26, 0.16);
+}
+.pillar-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--bg-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+.pillar-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+.pillar-card p {
+  font-size: 0.92rem;
+  line-height: 1.68;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Section 7: Why RIOPAK & Manufacturing Infrastructure
+   -------------------------------------------------------------------------- */
+.why-riopak-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 36px;
+}
+.why-pillar-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+.why-pillar-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.why-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.why-pillar-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.why-pillar-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+  flex: 1;
+}
+
+.infra-showcase-box {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.infra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+.infra-media {
+  position: relative;
+  min-height: 350px;
+  background: var(--dark);
+}
+.infra-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.infra-badge-float {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.infra-content {
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infra-content h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+.infra-content p {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+.infra-checks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+.infra-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.infra-check-item svg {
+  color: var(--accent);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Section 8: Bottom CTA Banner Box
+   -------------------------------------------------------------------------- */
+.about-cta-section {
+  padding: 60px 0 84px;
+}
+.about-cta-box {
+  background: var(--dark);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 56px 48px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-lg);
+}
+.about-cta-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(232, 80, 26, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+.about-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+.about-cta-box h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.18;
+}
+.about-cta-box p {
+  font-size: 1.04rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+.about-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .commitment-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .why-riopak-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+  .pillars-bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .infra-grid {
+    grid-template-columns: 1fr;
+  }
+  .infra-media {
+    min-height: 260px;
+  }
+  .infra-content {
+    padding: 32px 24px;
+  }
+  .top-utility-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .commitment-grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-riopak-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-cta-box {
+    padding: 36px 24px;
+  }
+  .infra-checks-grid {
+    grid-template-columns: 1fr;
+  }
+  .tagline-banner {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .commitment-grid-5 {
+    grid-template-columns: 1fr;
+  }
+  .scope-pills-row {
+    flex-direction: column;
+  }
+}
